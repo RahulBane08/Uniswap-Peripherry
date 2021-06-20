@@ -1,0 +1,1928 @@
+{
+  "contractName": "ISelfPermit",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermitIfNecessary",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermitAllowed",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermitAllowedIfNecessary",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"expiry\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermitAllowed\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"expiry\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermitAllowedIfNecessary\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermitIfNecessary\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this).\",\"params\":{\"deadline\":\"A timestamp, the current blocktime must be less than or equal to this timestamp\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\",\"value\":\"The amount that can be spent of token\"}},\"selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this)\",\"params\":{\"expiry\":\"The timestamp at which the permit is no longer valid\",\"nonce\":\"The current nonce of the owner\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\"}},\"selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.\",\"params\":{\"expiry\":\"The timestamp at which the permit is no longer valid\",\"nonce\":\"The current nonce of the owner\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\"}},\"selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit\",\"params\":{\"deadline\":\"A timestamp, the current blocktime must be less than or equal to this timestamp\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\",\"value\":\"The amount that can be spent of token\"}}},\"title\":\"Self Permit\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend a given token from `msg.sender`\"},\"selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\"},\"selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\"},\"selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend a given token from `msg.sender`\"}},\"notice\":\"Functionality to call permit on any EIP-2612-compliant token for use in the route\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/ISelfPermit.sol\":\"ISelfPermit\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/ISelfPermit.sol\":{\"keccak256\":\"0xb442ad31c8fef5c47ebb82b3b3f906d0a5dbca8eb26db90b287a4825bf53d595\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6e36e6e894083ad07e2ba62977a06db0874b8ed1f6eac705f4c9d89a410f54ea\",\"dweb:/ipfs/QmWLWTuKrcCzxZeedLpUG3c8jjFLs5gLmvt35Ysp2uc9c6\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL-2.0-or-later\r\npragma solidity >=0.7.5;\r\n\r\n/// @title Self Permit\r\n/// @notice Functionality to call permit on any EIP-2612-compliant token for use in the route\r\ninterface ISelfPermit {\r\n    /// @notice Permits this contract to spend a given token from `msg.sender`\r\n    /// @dev The `owner` is always msg.sender and the `spender` is always address(this).\r\n    /// @param token The address of the token spent\r\n    /// @param value The amount that can be spent of token\r\n    /// @param deadline A timestamp, the current blocktime must be less than or equal to this timestamp\r\n    /// @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\r\n    /// @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\r\n    /// @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`\r\n    function selfPermit(\r\n        address token,\r\n        uint256 value,\r\n        uint256 deadline,\r\n        uint8 v,\r\n        bytes32 r,\r\n        bytes32 s\r\n    ) external payable;\r\n\r\n    /// @notice Permits this contract to spend a given token from `msg.sender`\r\n    /// @dev The `owner` is always msg.sender and the `spender` is always address(this).\r\n    /// Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit\r\n    /// @param token The address of the token spent\r\n    /// @param value The amount that can be spent of token\r\n    /// @param deadline A timestamp, the current blocktime must be less than or equal to this timestamp\r\n    /// @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\r\n    /// @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\r\n    /// @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`\r\n    function selfPermitIfNecessary(\r\n        address token,\r\n        uint256 value,\r\n        uint256 deadline,\r\n        uint8 v,\r\n        bytes32 r,\r\n        bytes32 s\r\n    ) external payable;\r\n\r\n    /// @notice Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\r\n    /// @dev The `owner` is always msg.sender and the `spender` is always address(this)\r\n    /// @param token The address of the token spent\r\n    /// @param nonce The current nonce of the owner\r\n    /// @param expiry The timestamp at which the permit is no longer valid\r\n    /// @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\r\n    /// @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\r\n    /// @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`\r\n    function selfPermitAllowed(\r\n        address token,\r\n        uint256 nonce,\r\n        uint256 expiry,\r\n        uint8 v,\r\n        bytes32 r,\r\n        bytes32 s\r\n    ) external payable;\r\n\r\n    /// @notice Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\r\n    /// @dev The `owner` is always msg.sender and the `spender` is always address(this)\r\n    /// Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.\r\n    /// @param token The address of the token spent\r\n    /// @param nonce The current nonce of the owner\r\n    /// @param expiry The timestamp at which the permit is no longer valid\r\n    /// @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\r\n    /// @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\r\n    /// @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`\r\n    function selfPermitAllowedIfNecessary(\r\n        address token,\r\n        uint256 nonce,\r\n        uint256 expiry,\r\n        uint8 v,\r\n        bytes32 r,\r\n        bytes32 s\r\n    ) external payable;\r\n}\r\n",
+  "sourcePath": "D:/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/ISelfPermit.sol",
+  "ast": {
+    "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/ISelfPermit.sol",
+    "exportedSymbols": {
+      "ISelfPermit": [
+        661
+      ]
+    },
+    "id": 662,
+    "license": "GPL-2.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 595,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:24:10"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 596,
+          "nodeType": "StructuredDocumentation",
+          "src": "74:119:10",
+          "text": "@title Self Permit\n @notice Functionality to call permit on any EIP-2612-compliant token for use in the route"
+        },
+        "fullyImplemented": false,
+        "id": 661,
+        "linearizedBaseContracts": [
+          661
+        ],
+        "name": "ISelfPermit",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 597,
+              "nodeType": "StructuredDocumentation",
+              "src": "222:670:10",
+              "text": "@notice Permits this contract to spend a given token from `msg.sender`\n @dev The `owner` is always msg.sender and the `spender` is always address(this).\n @param token The address of the token spent\n @param value The amount that can be spent of token\n @param deadline A timestamp, the current blocktime must be less than or equal to this timestamp\n @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\n @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\n @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`"
+            },
+            "functionSelector": "f3995c67",
+            "id": 612,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selfPermit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 610,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 599,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 612,
+                  "src": "928:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 598,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "928:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 601,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 612,
+                  "src": "952:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 600,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "952:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 603,
+                  "mutability": "mutable",
+                  "name": "deadline",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 612,
+                  "src": "976:16:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 602,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "976:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 605,
+                  "mutability": "mutable",
+                  "name": "v",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 612,
+                  "src": "1003:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 604,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1003:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 607,
+                  "mutability": "mutable",
+                  "name": "r",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 612,
+                  "src": "1021:9:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 606,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1021:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 609,
+                  "mutability": "mutable",
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 612,
+                  "src": "1041:9:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 608,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1041:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "917:140:10"
+            },
+            "returnParameters": {
+              "id": 611,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1074:0:10"
+            },
+            "scope": 661,
+            "src": "898:177:10",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 613,
+              "nodeType": "StructuredDocumentation",
+              "src": "1083:787:10",
+              "text": "@notice Permits this contract to spend a given token from `msg.sender`\n @dev The `owner` is always msg.sender and the `spender` is always address(this).\n Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit\n @param token The address of the token spent\n @param value The amount that can be spent of token\n @param deadline A timestamp, the current blocktime must be less than or equal to this timestamp\n @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\n @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\n @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`"
+            },
+            "functionSelector": "c2e3140a",
+            "id": 628,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selfPermitIfNecessary",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 626,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 615,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 628,
+                  "src": "1917:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 614,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1917:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 617,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 628,
+                  "src": "1941:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 616,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1941:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 619,
+                  "mutability": "mutable",
+                  "name": "deadline",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 628,
+                  "src": "1965:16:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 618,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1965:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 621,
+                  "mutability": "mutable",
+                  "name": "v",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 628,
+                  "src": "1992:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 620,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1992:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 623,
+                  "mutability": "mutable",
+                  "name": "r",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 628,
+                  "src": "2010:9:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 622,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2010:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 625,
+                  "mutability": "mutable",
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 628,
+                  "src": "2030:9:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 624,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2030:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1906:140:10"
+            },
+            "returnParameters": {
+              "id": 627,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2063:0:10"
+            },
+            "scope": 661,
+            "src": "1876:188:10",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 629,
+              "nodeType": "StructuredDocumentation",
+              "src": "2072:677:10",
+              "text": "@notice Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\n @dev The `owner` is always msg.sender and the `spender` is always address(this)\n @param token The address of the token spent\n @param nonce The current nonce of the owner\n @param expiry The timestamp at which the permit is no longer valid\n @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\n @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\n @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`"
+            },
+            "functionSelector": "4659a494",
+            "id": 644,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selfPermitAllowed",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 642,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 631,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "2792:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 630,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2792:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 633,
+                  "mutability": "mutable",
+                  "name": "nonce",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "2816:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 632,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2816:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 635,
+                  "mutability": "mutable",
+                  "name": "expiry",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "2840:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 634,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2840:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 637,
+                  "mutability": "mutable",
+                  "name": "v",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "2865:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 636,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2865:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 639,
+                  "mutability": "mutable",
+                  "name": "r",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "2883:9:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 638,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2883:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 641,
+                  "mutability": "mutable",
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 644,
+                  "src": "2903:9:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 640,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2903:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2781:138:10"
+            },
+            "returnParameters": {
+              "id": 643,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2936:0:10"
+            },
+            "scope": 661,
+            "src": "2755:182:10",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 645,
+              "nodeType": "StructuredDocumentation",
+              "src": "2945:809:10",
+              "text": "@notice Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\n @dev The `owner` is always msg.sender and the `spender` is always address(this)\n Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.\n @param token The address of the token spent\n @param nonce The current nonce of the owner\n @param expiry The timestamp at which the permit is no longer valid\n @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\n @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\n @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`"
+            },
+            "functionSelector": "a4a78f0c",
+            "id": 660,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selfPermitAllowedIfNecessary",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 658,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 647,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 660,
+                  "src": "3808:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 646,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3808:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 649,
+                  "mutability": "mutable",
+                  "name": "nonce",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 660,
+                  "src": "3832:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 648,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3832:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 651,
+                  "mutability": "mutable",
+                  "name": "expiry",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 660,
+                  "src": "3856:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 650,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3856:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 653,
+                  "mutability": "mutable",
+                  "name": "v",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 660,
+                  "src": "3881:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 652,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3881:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 655,
+                  "mutability": "mutable",
+                  "name": "r",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 660,
+                  "src": "3899:9:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 654,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3899:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 657,
+                  "mutability": "mutable",
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 660,
+                  "src": "3919:9:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 656,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3919:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3797:138:10"
+            },
+            "returnParameters": {
+              "id": 659,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3952:0:10"
+            },
+            "scope": 661,
+            "src": "3760:193:10",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 662,
+        "src": "193:3763:10"
+      }
+    ],
+    "src": "46:3912:10"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/ISelfPermit.sol",
+      "exportedSymbols": {
+        "ISelfPermit": [
+          661
+        ]
+      },
+      "license": "GPL-2.0-or-later"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.7",
+            ".5"
+          ]
+        },
+        "id": 595,
+        "name": "PragmaDirective",
+        "src": "46:24:10"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            661
+          ],
+          "name": "ISelfPermit",
+          "scope": 662
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title Self Permit\n @notice Functionality to call permit on any EIP-2612-compliant token for use in the route"
+            },
+            "id": 596,
+            "name": "StructuredDocumentation",
+            "src": "74:119:10"
+          },
+          {
+            "attributes": {
+              "functionSelector": "f3995c67",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "selfPermit",
+              "scope": 661,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Permits this contract to spend a given token from `msg.sender`\n @dev The `owner` is always msg.sender and the `spender` is always address(this).\n @param token The address of the token spent\n @param value The amount that can be spent of token\n @param deadline A timestamp, the current blocktime must be less than or equal to this timestamp\n @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\n @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\n @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`"
+                },
+                "id": 597,
+                "name": "StructuredDocumentation",
+                "src": "222:670:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "token",
+                      "scope": 612,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 598,
+                        "name": "ElementaryTypeName",
+                        "src": "928:7:10"
+                      }
+                    ],
+                    "id": 599,
+                    "name": "VariableDeclaration",
+                    "src": "928:13:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "value",
+                      "scope": 612,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 600,
+                        "name": "ElementaryTypeName",
+                        "src": "952:7:10"
+                      }
+                    ],
+                    "id": 601,
+                    "name": "VariableDeclaration",
+                    "src": "952:13:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "deadline",
+                      "scope": 612,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 602,
+                        "name": "ElementaryTypeName",
+                        "src": "976:7:10"
+                      }
+                    ],
+                    "id": 603,
+                    "name": "VariableDeclaration",
+                    "src": "976:16:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "v",
+                      "scope": 612,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 604,
+                        "name": "ElementaryTypeName",
+                        "src": "1003:5:10"
+                      }
+                    ],
+                    "id": 605,
+                    "name": "VariableDeclaration",
+                    "src": "1003:7:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "r",
+                      "scope": 612,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 606,
+                        "name": "ElementaryTypeName",
+                        "src": "1021:7:10"
+                      }
+                    ],
+                    "id": 607,
+                    "name": "VariableDeclaration",
+                    "src": "1021:9:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "s",
+                      "scope": 612,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 608,
+                        "name": "ElementaryTypeName",
+                        "src": "1041:7:10"
+                      }
+                    ],
+                    "id": 609,
+                    "name": "VariableDeclaration",
+                    "src": "1041:9:10"
+                  }
+                ],
+                "id": 610,
+                "name": "ParameterList",
+                "src": "917:140:10"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 611,
+                "name": "ParameterList",
+                "src": "1074:0:10"
+              }
+            ],
+            "id": 612,
+            "name": "FunctionDefinition",
+            "src": "898:177:10"
+          },
+          {
+            "attributes": {
+              "functionSelector": "c2e3140a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "selfPermitIfNecessary",
+              "scope": 661,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Permits this contract to spend a given token from `msg.sender`\n @dev The `owner` is always msg.sender and the `spender` is always address(this).\n Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit\n @param token The address of the token spent\n @param value The amount that can be spent of token\n @param deadline A timestamp, the current blocktime must be less than or equal to this timestamp\n @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\n @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\n @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`"
+                },
+                "id": 613,
+                "name": "StructuredDocumentation",
+                "src": "1083:787:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "token",
+                      "scope": 628,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 614,
+                        "name": "ElementaryTypeName",
+                        "src": "1917:7:10"
+                      }
+                    ],
+                    "id": 615,
+                    "name": "VariableDeclaration",
+                    "src": "1917:13:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "value",
+                      "scope": 628,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 616,
+                        "name": "ElementaryTypeName",
+                        "src": "1941:7:10"
+                      }
+                    ],
+                    "id": 617,
+                    "name": "VariableDeclaration",
+                    "src": "1941:13:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "deadline",
+                      "scope": 628,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 618,
+                        "name": "ElementaryTypeName",
+                        "src": "1965:7:10"
+                      }
+                    ],
+                    "id": 619,
+                    "name": "VariableDeclaration",
+                    "src": "1965:16:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "v",
+                      "scope": 628,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 620,
+                        "name": "ElementaryTypeName",
+                        "src": "1992:5:10"
+                      }
+                    ],
+                    "id": 621,
+                    "name": "VariableDeclaration",
+                    "src": "1992:7:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "r",
+                      "scope": 628,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 622,
+                        "name": "ElementaryTypeName",
+                        "src": "2010:7:10"
+                      }
+                    ],
+                    "id": 623,
+                    "name": "VariableDeclaration",
+                    "src": "2010:9:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "s",
+                      "scope": 628,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 624,
+                        "name": "ElementaryTypeName",
+                        "src": "2030:7:10"
+                      }
+                    ],
+                    "id": 625,
+                    "name": "VariableDeclaration",
+                    "src": "2030:9:10"
+                  }
+                ],
+                "id": 626,
+                "name": "ParameterList",
+                "src": "1906:140:10"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 627,
+                "name": "ParameterList",
+                "src": "2063:0:10"
+              }
+            ],
+            "id": 628,
+            "name": "FunctionDefinition",
+            "src": "1876:188:10"
+          },
+          {
+            "attributes": {
+              "functionSelector": "4659a494",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "selfPermitAllowed",
+              "scope": 661,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\n @dev The `owner` is always msg.sender and the `spender` is always address(this)\n @param token The address of the token spent\n @param nonce The current nonce of the owner\n @param expiry The timestamp at which the permit is no longer valid\n @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\n @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\n @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`"
+                },
+                "id": 629,
+                "name": "StructuredDocumentation",
+                "src": "2072:677:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "token",
+                      "scope": 644,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 630,
+                        "name": "ElementaryTypeName",
+                        "src": "2792:7:10"
+                      }
+                    ],
+                    "id": 631,
+                    "name": "VariableDeclaration",
+                    "src": "2792:13:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "nonce",
+                      "scope": 644,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 632,
+                        "name": "ElementaryTypeName",
+                        "src": "2816:7:10"
+                      }
+                    ],
+                    "id": 633,
+                    "name": "VariableDeclaration",
+                    "src": "2816:13:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "expiry",
+                      "scope": 644,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 634,
+                        "name": "ElementaryTypeName",
+                        "src": "2840:7:10"
+                      }
+                    ],
+                    "id": 635,
+                    "name": "VariableDeclaration",
+                    "src": "2840:14:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "v",
+                      "scope": 644,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 636,
+                        "name": "ElementaryTypeName",
+                        "src": "2865:5:10"
+                      }
+                    ],
+                    "id": 637,
+                    "name": "VariableDeclaration",
+                    "src": "2865:7:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "r",
+                      "scope": 644,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 638,
+                        "name": "ElementaryTypeName",
+                        "src": "2883:7:10"
+                      }
+                    ],
+                    "id": 639,
+                    "name": "VariableDeclaration",
+                    "src": "2883:9:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "s",
+                      "scope": 644,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 640,
+                        "name": "ElementaryTypeName",
+                        "src": "2903:7:10"
+                      }
+                    ],
+                    "id": 641,
+                    "name": "VariableDeclaration",
+                    "src": "2903:9:10"
+                  }
+                ],
+                "id": 642,
+                "name": "ParameterList",
+                "src": "2781:138:10"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 643,
+                "name": "ParameterList",
+                "src": "2936:0:10"
+              }
+            ],
+            "id": 644,
+            "name": "FunctionDefinition",
+            "src": "2755:182:10"
+          },
+          {
+            "attributes": {
+              "functionSelector": "a4a78f0c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "selfPermitAllowedIfNecessary",
+              "scope": 661,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\n @dev The `owner` is always msg.sender and the `spender` is always address(this)\n Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.\n @param token The address of the token spent\n @param nonce The current nonce of the owner\n @param expiry The timestamp at which the permit is no longer valid\n @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\n @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\n @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`"
+                },
+                "id": 645,
+                "name": "StructuredDocumentation",
+                "src": "2945:809:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "token",
+                      "scope": 660,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 646,
+                        "name": "ElementaryTypeName",
+                        "src": "3808:7:10"
+                      }
+                    ],
+                    "id": 647,
+                    "name": "VariableDeclaration",
+                    "src": "3808:13:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "nonce",
+                      "scope": 660,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 648,
+                        "name": "ElementaryTypeName",
+                        "src": "3832:7:10"
+                      }
+                    ],
+                    "id": 649,
+                    "name": "VariableDeclaration",
+                    "src": "3832:13:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "expiry",
+                      "scope": 660,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 650,
+                        "name": "ElementaryTypeName",
+                        "src": "3856:7:10"
+                      }
+                    ],
+                    "id": 651,
+                    "name": "VariableDeclaration",
+                    "src": "3856:14:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "v",
+                      "scope": 660,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 652,
+                        "name": "ElementaryTypeName",
+                        "src": "3881:5:10"
+                      }
+                    ],
+                    "id": 653,
+                    "name": "VariableDeclaration",
+                    "src": "3881:7:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "r",
+                      "scope": 660,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 654,
+                        "name": "ElementaryTypeName",
+                        "src": "3899:7:10"
+                      }
+                    ],
+                    "id": 655,
+                    "name": "VariableDeclaration",
+                    "src": "3899:9:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "s",
+                      "scope": 660,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 656,
+                        "name": "ElementaryTypeName",
+                        "src": "3919:7:10"
+                      }
+                    ],
+                    "id": 657,
+                    "name": "VariableDeclaration",
+                    "src": "3919:9:10"
+                  }
+                ],
+                "id": 658,
+                "name": "ParameterList",
+                "src": "3797:138:10"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 659,
+                "name": "ParameterList",
+                "src": "3952:0:10"
+              }
+            ],
+            "id": 660,
+            "name": "FunctionDefinition",
+            "src": "3760:193:10"
+          }
+        ],
+        "id": 661,
+        "name": "ContractDefinition",
+        "src": "193:3763:10"
+      }
+    ],
+    "id": 662,
+    "name": "SourceUnit",
+    "src": "46:3912:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-20T10:26:19.493Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "details": "The `owner` is always msg.sender and the `spender` is always address(this).",
+        "params": {
+          "deadline": "A timestamp, the current blocktime must be less than or equal to this timestamp",
+          "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+          "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+          "token": "The address of the token spent",
+          "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`",
+          "value": "The amount that can be spent of token"
+        }
+      },
+      "selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "details": "The `owner` is always msg.sender and the `spender` is always address(this)",
+        "params": {
+          "expiry": "The timestamp at which the permit is no longer valid",
+          "nonce": "The current nonce of the owner",
+          "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+          "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+          "token": "The address of the token spent",
+          "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`"
+        }
+      },
+      "selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "details": "The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.",
+        "params": {
+          "expiry": "The timestamp at which the permit is no longer valid",
+          "nonce": "The current nonce of the owner",
+          "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+          "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+          "token": "The address of the token spent",
+          "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`"
+        }
+      },
+      "selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "details": "The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit",
+        "params": {
+          "deadline": "A timestamp, the current blocktime must be less than or equal to this timestamp",
+          "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+          "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+          "token": "The address of the token spent",
+          "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`",
+          "value": "The amount that can be spent of token"
+        }
+      }
+    },
+    "title": "Self Permit",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Permits this contract to spend a given token from `msg.sender`"
+      },
+      "selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter"
+      },
+      "selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter"
+      },
+      "selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Permits this contract to spend a given token from `msg.sender`"
+      }
+    },
+    "notice": "Functionality to call permit on any EIP-2612-compliant token for use in the route",
+    "version": 1
+  }
+}

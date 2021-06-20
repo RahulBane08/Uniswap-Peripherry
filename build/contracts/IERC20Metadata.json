@@ -1,0 +1,862 @@
+{
+  "contractName": "IERC20Metadata",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"allowance(address,address)\":{\"details\":\"Returns the remaining number of tokens that `spender` will be allowed to spend on behalf of `owner` through {transferFrom}. This is zero by default. This value changes when {approve} or {transferFrom} are called.\"},\"approve(address,uint256)\":{\"details\":\"Sets `amount` as the allowance of `spender` over the caller's tokens. Returns a boolean value indicating whether the operation succeeded. IMPORTANT: Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729 Emits an {Approval} event.\"},\"balanceOf(address)\":{\"details\":\"Returns the amount of tokens owned by `account`.\"},\"decimals()\":{\"returns\":{\"_0\":\"The number of decimal places the token has\"}},\"name()\":{\"returns\":{\"_0\":\"The name of the token\"}},\"symbol()\":{\"returns\":{\"_0\":\"The symbol of the token\"}},\"totalSupply()\":{\"details\":\"Returns the amount of tokens in existence.\"},\"transfer(address,uint256)\":{\"details\":\"Moves `amount` tokens from the caller's account to `recipient`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism. `amount` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event.\"}},\"title\":\"IERC20MetadataInterface for ERC20 Metadata\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Extension to IERC20 that includes token metadata\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IERC20Metadata.sol\":\"IERC20Metadata\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IERC20Metadata.sol\":{\"keccak256\":\"0x7940a5e3a1cced752f4e6ceaf39849daa19f98d014ac783f868495b3514d51f8\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://aeac81e47e02bb3d57fb556eb2cf3cdcef7af25f7952bcad011120e072724aa6\",\"dweb:/ipfs/QmWPE2G3AQmafj8zFJ3cCPx9nwZEGDba3W9r4XMVc3CvpG\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b\",\"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\r\npragma solidity ^0.7.0;\r\n\r\nimport '@openzeppelin/contracts/token/ERC20/IERC20.sol';\r\n\r\n/// @title IERC20Metadata\r\n/// @title Interface for ERC20 Metadata\r\n/// @notice Extension to IERC20 that includes token metadata\r\ninterface IERC20Metadata is IERC20 {\r\n    /// @return The name of the token\r\n    function name() external view returns (string memory);\r\n\r\n    /// @return The symbol of the token\r\n    function symbol() external view returns (string memory);\r\n\r\n    /// @return The number of decimal places the token has\r\n    function decimals() external view returns (uint8);\r\n}\r\n",
+  "sourcePath": "D:/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IERC20Metadata.sol",
+  "ast": {
+    "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IERC20Metadata.sol",
+    "exportedSymbols": {
+      "IERC20": [
+        6320
+      ],
+      "IERC20Metadata": [
+        1249
+      ]
+    },
+    "id": 1250,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1226,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:23:10"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "id": 1227,
+        "nodeType": "ImportDirective",
+        "scope": 1250,
+        "sourceUnit": 6321,
+        "src": "67:56:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 1229,
+              "name": "IERC20",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6320,
+              "src": "285:6:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$6320",
+                "typeString": "contract IERC20"
+              }
+            },
+            "id": 1230,
+            "nodeType": "InheritanceSpecifier",
+            "src": "285:6:10"
+          }
+        ],
+        "contractDependencies": [
+          6320
+        ],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 1228,
+          "nodeType": "StructuredDocumentation",
+          "src": "127:130:10",
+          "text": "@title IERC20Metadata\n @title Interface for ERC20 Metadata\n @notice Extension to IERC20 that includes token metadata"
+        },
+        "fullyImplemented": false,
+        "id": 1249,
+        "linearizedBaseContracts": [
+          1249,
+          6320
+        ],
+        "name": "IERC20Metadata",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 1231,
+              "nodeType": "StructuredDocumentation",
+              "src": "299:33:10",
+              "text": "@return The name of the token"
+            },
+            "functionSelector": "06fdde03",
+            "id": 1236,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "name",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1232,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "351:2:10"
+            },
+            "returnParameters": {
+              "id": 1235,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1234,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1236,
+                  "src": "377:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1233,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "377:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "376:15:10"
+            },
+            "scope": 1249,
+            "src": "338:54:10",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 1237,
+              "nodeType": "StructuredDocumentation",
+              "src": "400:35:10",
+              "text": "@return The symbol of the token"
+            },
+            "functionSelector": "95d89b41",
+            "id": 1242,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "symbol",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1238,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "456:2:10"
+            },
+            "returnParameters": {
+              "id": 1241,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1240,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1242,
+                  "src": "482:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1239,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "482:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "481:15:10"
+            },
+            "scope": 1249,
+            "src": "441:56:10",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 1243,
+              "nodeType": "StructuredDocumentation",
+              "src": "505:54:10",
+              "text": "@return The number of decimal places the token has"
+            },
+            "functionSelector": "313ce567",
+            "id": 1248,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decimals",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1244,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "582:2:10"
+            },
+            "returnParameters": {
+              "id": 1247,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1246,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1248,
+                  "src": "608:5:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1245,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "608:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "607:7:10"
+            },
+            "scope": 1249,
+            "src": "565:50:10",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1250,
+        "src": "257:361:10"
+      }
+    ],
+    "src": "40:580:10"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IERC20Metadata.sol",
+      "exportedSymbols": {
+        "IERC20": [
+          6320
+        ],
+        "IERC20Metadata": [
+          1249
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".0"
+          ]
+        },
+        "id": 1226,
+        "name": "PragmaDirective",
+        "src": "40:23:10"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 6321,
+          "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "scope": 1250,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1227,
+        "name": "ImportDirective",
+        "src": "67:56:10"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            6320
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1249,
+            6320
+          ],
+          "name": "IERC20Metadata",
+          "scope": 1250
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title IERC20Metadata\n @title Interface for ERC20 Metadata\n @notice Extension to IERC20 that includes token metadata"
+            },
+            "id": 1228,
+            "name": "StructuredDocumentation",
+            "src": "127:130:10"
+          },
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "IERC20",
+                  "referencedDeclaration": 6320,
+                  "type": "contract IERC20"
+                },
+                "id": 1229,
+                "name": "UserDefinedTypeName",
+                "src": "285:6:10"
+              }
+            ],
+            "id": 1230,
+            "name": "InheritanceSpecifier",
+            "src": "285:6:10"
+          },
+          {
+            "attributes": {
+              "functionSelector": "06fdde03",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "name",
+              "scope": 1249,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@return The name of the token"
+                },
+                "id": 1231,
+                "name": "StructuredDocumentation",
+                "src": "299:33:10"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1232,
+                "name": "ParameterList",
+                "src": "351:2:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 1236,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 1233,
+                        "name": "ElementaryTypeName",
+                        "src": "377:6:10"
+                      }
+                    ],
+                    "id": 1234,
+                    "name": "VariableDeclaration",
+                    "src": "377:13:10"
+                  }
+                ],
+                "id": 1235,
+                "name": "ParameterList",
+                "src": "376:15:10"
+              }
+            ],
+            "id": 1236,
+            "name": "FunctionDefinition",
+            "src": "338:54:10"
+          },
+          {
+            "attributes": {
+              "functionSelector": "95d89b41",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "symbol",
+              "scope": 1249,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@return The symbol of the token"
+                },
+                "id": 1237,
+                "name": "StructuredDocumentation",
+                "src": "400:35:10"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1238,
+                "name": "ParameterList",
+                "src": "456:2:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 1242,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 1239,
+                        "name": "ElementaryTypeName",
+                        "src": "482:6:10"
+                      }
+                    ],
+                    "id": 1240,
+                    "name": "VariableDeclaration",
+                    "src": "482:13:10"
+                  }
+                ],
+                "id": 1241,
+                "name": "ParameterList",
+                "src": "481:15:10"
+              }
+            ],
+            "id": 1242,
+            "name": "FunctionDefinition",
+            "src": "441:56:10"
+          },
+          {
+            "attributes": {
+              "functionSelector": "313ce567",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "decimals",
+              "scope": 1249,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@return The number of decimal places the token has"
+                },
+                "id": 1243,
+                "name": "StructuredDocumentation",
+                "src": "505:54:10"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1244,
+                "name": "ParameterList",
+                "src": "582:2:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 1248,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 1245,
+                        "name": "ElementaryTypeName",
+                        "src": "608:5:10"
+                      }
+                    ],
+                    "id": 1246,
+                    "name": "VariableDeclaration",
+                    "src": "608:5:10"
+                  }
+                ],
+                "id": 1247,
+                "name": "ParameterList",
+                "src": "607:7:10"
+              }
+            ],
+            "id": 1248,
+            "name": "FunctionDefinition",
+            "src": "565:50:10"
+          }
+        ],
+        "id": 1249,
+        "name": "ContractDefinition",
+        "src": "257:361:10"
+      }
+    ],
+    "id": 1250,
+    "name": "SourceUnit",
+    "src": "40:580:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-16T08:18:32.603Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "allowance(address,address)": {
+        "details": "Returns the remaining number of tokens that `spender` will be allowed to spend on behalf of `owner` through {transferFrom}. This is zero by default. This value changes when {approve} or {transferFrom} are called."
+      },
+      "approve(address,uint256)": {
+        "details": "Sets `amount` as the allowance of `spender` over the caller's tokens. Returns a boolean value indicating whether the operation succeeded. IMPORTANT: Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729 Emits an {Approval} event."
+      },
+      "balanceOf(address)": {
+        "details": "Returns the amount of tokens owned by `account`."
+      },
+      "decimals()": {
+        "returns": {
+          "_0": "The number of decimal places the token has"
+        }
+      },
+      "name()": {
+        "returns": {
+          "_0": "The name of the token"
+        }
+      },
+      "symbol()": {
+        "returns": {
+          "_0": "The symbol of the token"
+        }
+      },
+      "totalSupply()": {
+        "details": "Returns the amount of tokens in existence."
+      },
+      "transfer(address,uint256)": {
+        "details": "Moves `amount` tokens from the caller's account to `recipient`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
+      },
+      "transferFrom(address,address,uint256)": {
+        "details": "Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism. `amount` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
+      }
+    },
+    "title": "IERC20MetadataInterface for ERC20 Metadata",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "notice": "Extension to IERC20 that includes token metadata",
+    "version": 1
+  }
+}

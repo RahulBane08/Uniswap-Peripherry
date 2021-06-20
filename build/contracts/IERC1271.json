@@ -1,0 +1,415 @@
+{
+  "contractName": "IERC1271",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "hash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "isValidSignature",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "magicValue",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"signature\",\"type\":\"bytes\"}],\"name\":\"isValidSignature\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"magicValue\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Interface defined by EIP-1271\",\"kind\":\"dev\",\"methods\":{\"isValidSignature(bytes32,bytes)\":{\"details\":\"MUST return the bytes4 magic value 0x1626ba7e when function passes. MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5). MUST allow external calls.\",\"params\":{\"hash\":\"Hash of the data to be signed\",\"signature\":\"Signature byte array associated with _data\"},\"returns\":{\"magicValue\":\"The bytes4 magic value 0x1626ba7e\"}}},\"title\":\"Interface for verifying contract-based account signatures\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"isValidSignature(bytes32,bytes)\":{\"notice\":\"Returns whether the provided signature is valid for the provided data\"}},\"notice\":\"Interface that verifies provided signature for the data\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/external/IERC1271.sol\":\"IERC1271\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/external/IERC1271.sol\":{\"keccak256\":\"0xd9b5ac195482b3cd25c2b1d2bf7f8be6f69b8352df17e23111556fc436590bb8\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://dfd4975c3a69938f6fa6189fe5e4428260bd8aaa3e1f202c934edafe09d3d5d2\",\"dweb:/ipfs/QmaW1ZYYhnozmccckXLcg99ZoJCwoURdhaEPd26LmYvSZV\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL-2.0-or-later\r\npragma solidity >=0.5.0;\r\n\r\n/// @title Interface for verifying contract-based account signatures\r\n/// @notice Interface that verifies provided signature for the data\r\n/// @dev Interface defined by EIP-1271\r\ninterface IERC1271 {\r\n    /// @notice Returns whether the provided signature is valid for the provided data\r\n    /// @dev MUST return the bytes4 magic value 0x1626ba7e when function passes.\r\n    /// MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5).\r\n    /// MUST allow external calls.\r\n    /// @param hash Hash of the data to be signed\r\n    /// @param signature Signature byte array associated with _data\r\n    /// @return magicValue The bytes4 magic value 0x1626ba7e\r\n    function isValidSignature(bytes32 hash, bytes memory signature) external view returns (bytes4 magicValue);\r\n}\r\n",
+  "sourcePath": "D:/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/external/IERC1271.sol",
+  "ast": {
+    "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/external/IERC1271.sol",
+    "exportedSymbols": {
+      "IERC1271": [
+        675
+      ]
+    },
+    "id": 676,
+    "license": "GPL-2.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 663,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:24:11"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 664,
+          "nodeType": "StructuredDocumentation",
+          "src": "74:179:11",
+          "text": "@title Interface for verifying contract-based account signatures\n @notice Interface that verifies provided signature for the data\n @dev Interface defined by EIP-1271"
+        },
+        "fullyImplemented": false,
+        "id": 675,
+        "linearizedBaseContracts": [
+          675
+        ],
+        "name": "IERC1271",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 665,
+              "nodeType": "StructuredDocumentation",
+              "src": "279:477:11",
+              "text": "@notice Returns whether the provided signature is valid for the provided data\n @dev MUST return the bytes4 magic value 0x1626ba7e when function passes.\n MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5).\n MUST allow external calls.\n @param hash Hash of the data to be signed\n @param signature Signature byte array associated with _data\n @return magicValue The bytes4 magic value 0x1626ba7e"
+            },
+            "functionSelector": "1626ba7e",
+            "id": 674,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isValidSignature",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 670,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 667,
+                  "mutability": "mutable",
+                  "name": "hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 674,
+                  "src": "788:12:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 666,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "788:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 669,
+                  "mutability": "mutable",
+                  "name": "signature",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 674,
+                  "src": "802:22:11",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 668,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "802:5:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "787:38:11"
+            },
+            "returnParameters": {
+              "id": 673,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 672,
+                  "mutability": "mutable",
+                  "name": "magicValue",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 674,
+                  "src": "849:17:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 671,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "849:6:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "848:19:11"
+            },
+            "scope": 675,
+            "src": "762:106:11",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 676,
+        "src": "253:618:11"
+      }
+    ],
+    "src": "46:827:11"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/external/IERC1271.sol",
+      "exportedSymbols": {
+        "IERC1271": [
+          675
+        ]
+      },
+      "license": "GPL-2.0-or-later"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 663,
+        "name": "PragmaDirective",
+        "src": "46:24:11"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            675
+          ],
+          "name": "IERC1271",
+          "scope": 676
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title Interface for verifying contract-based account signatures\n @notice Interface that verifies provided signature for the data\n @dev Interface defined by EIP-1271"
+            },
+            "id": 664,
+            "name": "StructuredDocumentation",
+            "src": "74:179:11"
+          },
+          {
+            "attributes": {
+              "functionSelector": "1626ba7e",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "isValidSignature",
+              "scope": 675,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Returns whether the provided signature is valid for the provided data\n @dev MUST return the bytes4 magic value 0x1626ba7e when function passes.\n MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5).\n MUST allow external calls.\n @param hash Hash of the data to be signed\n @param signature Signature byte array associated with _data\n @return magicValue The bytes4 magic value 0x1626ba7e"
+                },
+                "id": 665,
+                "name": "StructuredDocumentation",
+                "src": "279:477:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "hash",
+                      "scope": 674,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 666,
+                        "name": "ElementaryTypeName",
+                        "src": "788:7:11"
+                      }
+                    ],
+                    "id": 667,
+                    "name": "VariableDeclaration",
+                    "src": "788:12:11"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "signature",
+                      "scope": 674,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "bytes",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 668,
+                        "name": "ElementaryTypeName",
+                        "src": "802:5:11"
+                      }
+                    ],
+                    "id": 669,
+                    "name": "VariableDeclaration",
+                    "src": "802:22:11"
+                  }
+                ],
+                "id": 670,
+                "name": "ParameterList",
+                "src": "787:38:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "magicValue",
+                      "scope": 674,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes4",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes4",
+                          "type": "bytes4"
+                        },
+                        "id": 671,
+                        "name": "ElementaryTypeName",
+                        "src": "849:6:11"
+                      }
+                    ],
+                    "id": 672,
+                    "name": "VariableDeclaration",
+                    "src": "849:17:11"
+                  }
+                ],
+                "id": 673,
+                "name": "ParameterList",
+                "src": "848:19:11"
+              }
+            ],
+            "id": 674,
+            "name": "FunctionDefinition",
+            "src": "762:106:11"
+          }
+        ],
+        "id": 675,
+        "name": "ContractDefinition",
+        "src": "253:618:11"
+      }
+    ],
+    "id": 676,
+    "name": "SourceUnit",
+    "src": "46:827:11"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-20T10:26:19.495Z",
+  "devdoc": {
+    "details": "Interface defined by EIP-1271",
+    "kind": "dev",
+    "methods": {
+      "isValidSignature(bytes32,bytes)": {
+        "details": "MUST return the bytes4 magic value 0x1626ba7e when function passes. MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5). MUST allow external calls.",
+        "params": {
+          "hash": "Hash of the data to be signed",
+          "signature": "Signature byte array associated with _data"
+        },
+        "returns": {
+          "magicValue": "The bytes4 magic value 0x1626ba7e"
+        }
+      }
+    },
+    "title": "Interface for verifying contract-based account signatures",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "isValidSignature(bytes32,bytes)": {
+        "notice": "Returns whether the provided signature is valid for the provided data"
+      }
+    },
+    "notice": "Interface that verifies provided signature for the data",
+    "version": 1
+  }
+}

@@ -1,0 +1,1410 @@
+{
+  "contractName": "NonfungiblePositionManagerPositionsGasTest",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract NonfungiblePositionManager",
+          "name": "_nonfungiblePositionManager",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getGasCostOfPositions",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract NonfungiblePositionManager\",\"name\":\"_nonfungiblePositionManager\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getGasCostOfPositions\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol\":\"NonfungiblePositionManagerPositionsGasTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/NonfungiblePositionManager.sol\":{\"keccak256\":\"0xd77033154c549227c180ca0a1c1d3027144edf054693b933960837bda2c6fb4d\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://13cdc5520ab180e24706e4e096d0cf54ebad61e30ae65b931f27c773163905de\",\"dweb:/ipfs/QmcU4E4reuZ8ZNR9vtgnZ2wy3vztbXMAw1SkY1MAMpKSh5\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/BlockTimestamp.sol\":{\"keccak256\":\"0x404baed6d16d4978ebefb94139d19011530177dd82dc3f27c587deaf5d4dd23f\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://a2991db68ea87b9809dff7d020f0624d04ce8893b4c70dbca01bc1e987aecd46\",\"dweb:/ipfs/QmUkUUEEq3duPbz737rWHdXaX37bCzgrHF8bL9h5ka33i2\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/ERC721Permit.sol\":{\"keccak256\":\"0x28229e07b9c49c97f0751a4ca9ee59cd9a57ee28c81a3abe409530e09ba36bb8\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://4206de72c02b0bd2bc5ececd80e8a788c1519c3a139f89e99c9527b9139b387e\",\"dweb:/ipfs/QmdRz8v25ubkDneUX4aKgqi7AJg2rU6NwEJGhWX79e9DEj\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/LiquidityManagement.sol\":{\"keccak256\":\"0x7325a200a4bca4ae9a82b547bc31ae0fce7bb05fabe0bdee9f00343e2becdc2e\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://e9e0bf7717d7f39021c7aaf6489cbf6a6ae4dcf94bb612ebcf1c6439b15baef9\",\"dweb:/ipfs/QmbduFHdm8fnfmPt12nPzk8t1rQbz7dLszfbGuQRGRhD59\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/Multicall.sol\":{\"keccak256\":\"0xd4bda6b9aeeb33d2f0d33ceb269bb0a113cef00585746134497a160861fe50f8\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://020b4b429f648dd54815669ceb217a9150d238e5ce31a5a1202faba070d1fa30\",\"dweb:/ipfs/QmbqQ6YMh6uWPorH95CGiC2rVhkq82v8kmXWGSbVzDQ35h\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PeripheryImmutableState.sol\":{\"keccak256\":\"0x1d0175136fda60c5e1b6aab6dfa4a35856717413d754d0750eb75866f3f5e43f\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://8e19496cd2a7239e9e869bafbfb9f762691a9ab52f169b579f11d752d7df79a5\",\"dweb:/ipfs/QmTaLVPUVMGp4ZywHwpFupnz2873NPyqYs3EzbJTHpVNSA\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PeripheryPayments.sol\":{\"keccak256\":\"0x17a28ac516c82ac34b50ceb309fbc243c62f6d4839590b7c3bf871b5cef83f23\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://81507a0662596659c16dab46130d898993ff24d8015abccb79a1003bfc65453f\",\"dweb:/ipfs/QmfM5r2JVM2eodgA8392mESU3sRxbcsfk1N3NNEUA2ykSe\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PeripheryValidation.sol\":{\"keccak256\":\"0xe6f841dc4e8e0bf588936a8f316c1c9d77fb464f1dfe3ef8ebaf8349f6c8c412\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://0b67df63890991ff78893337da128d057fc3013051a66420e55a12a0032bda12\",\"dweb:/ipfs/QmRwBjt2UysMxcoyYutrnV7uT114voAcCPk9ajASN9aiTB\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PoolInitializer.sol\":{\"keccak256\":\"0x1141fd6d820b534347ad90e0f027d1dd3378066cbaf78330d8d0072ed9aeefcc\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://67dbbcb74c0c1b8761b2656f35bd7f8b0bad3311cfe5e6fbe6ba92f60d77821a\",\"dweb:/ipfs/QmRPhL3KAzhphnba2gRBryPCn5Zth3CoA6pPqHANcw8N6G\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/SelfPermit.sol\":{\"keccak256\":\"0x6d508a027f7a4a41ccb30a20f84bf29c52d7210d30e968142d064f9ce5c496ae\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://ff72331865afd843ac65d0fd559dc92bcfe1bcd9a2db913c1bdbb9f62224d724\",\"dweb:/ipfs/Qme7YMqjHxoo3RuN9onk9Notw7h512NnVFncAjqX6HuQdV\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IERC721Permit.sol\":{\"keccak256\":\"0x211a77d98af9c4c686f7f6365d9e545ea6253be910232c36be7758d3bc99bdff\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://ce417bd13b8b7d49c7ddda765392c2117b39f5a04bd56bbf47d65cdcd1af1bac\",\"dweb:/ipfs/QmbU2vFrffABYuCB9s9vckfaLiwXu4diTRSBf6YB1LXth2\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IMulticall.sol\":{\"keccak256\":\"0x76aeef8a8cd237f1bd8fb67f21e1734ba5c294b522c1932ce336f72fe41e5355\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://0b577b8f8e1b2767f218d0a1d78f7cc4d7b24ccd01ed7422a7129f9ae465edff\",\"dweb:/ipfs/QmVUzqSeAXf9Urwc1tseh1sW3pNz6z36vEYYYAGTNAnDWf\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/INonfungiblePositionManager.sol\":{\"keccak256\":\"0x424f2c08cab7abab5033e7c02f0e7a26437e640bccec41d7e7b077f996642d20\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://022a5f4bd78fe0d0c408be06b275f76d9a2ad67770a7d0fd8c97e66647237c7a\",\"dweb:/ipfs/QmYAWxDbRgjYqw1kSCJv5WCobQ36XnA8Ke4jfBBsmEt1HX\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/INonfungibleTokenPositionDescriptor.sol\":{\"keccak256\":\"0xad5664d7c455da6e2d56dc0d53b7d40354d83aac9312d367481b3428394ec8a3\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://3fa455da4a61b8b084edd5b27bfb1fd739eae48e1d1e72399841774a41d3163d\",\"dweb:/ipfs/QmXmeyfQXP4NPbZNanqquiaD9WZHUwvQThbezmCEFWnAQn\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IPeripheryImmutableState.sol\":{\"keccak256\":\"0x23bb9671c6188fe826d384acb88182efc75c55ee7b6e7c5792de8f26581f0390\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://eb0b086015acc6d97e15e71a406e5ba393d188df878c71eaeb98b6ce4c99a353\",\"dweb:/ipfs/QmWvXDAjebKmEJcvoB7S7e981zcvLvMLT11BLZZMf7D2rL\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IPeripheryPayments.sol\":{\"keccak256\":\"0x8e0cdb6280728619c44a8220996512b81e85f6fa7bc5373db742ea953a81eda8\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f0748123e32874d0e1e405a463fafcf98f686fac0055da2e13bfdaa0db917766\",\"dweb:/ipfs/QmRZPF69X1e6T3yT2z8HTgzEtXHTVScqzoEMbfvp5Niggq\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IPoolInitializer.sol\":{\"keccak256\":\"0x8229e43304f2c2412aaca27ea314ee78f3bcaca31124017b3bc4729c383594f1\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://3beed69fd04dd1ad59e9c083914ca47fd1f3c0bf53e50a62c772597a25191d78\",\"dweb:/ipfs/QmZ7vuCn86Gg6kopXVw5hBRPemcqtWykke8zUskZArq8aP\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/ISelfPermit.sol\":{\"keccak256\":\"0xb442ad31c8fef5c47ebb82b3b3f906d0a5dbca8eb26db90b287a4825bf53d595\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6e36e6e894083ad07e2ba62977a06db0874b8ed1f6eac705f4c9d89a410f54ea\",\"dweb:/ipfs/QmWLWTuKrcCzxZeedLpUG3c8jjFLs5gLmvt35Ysp2uc9c6\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/external/IERC1271.sol\":{\"keccak256\":\"0xd9b5ac195482b3cd25c2b1d2bf7f8be6f69b8352df17e23111556fc436590bb8\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://dfd4975c3a69938f6fa6189fe5e4428260bd8aaa3e1f202c934edafe09d3d5d2\",\"dweb:/ipfs/QmaW1ZYYhnozmccckXLcg99ZoJCwoURdhaEPd26LmYvSZV\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/external/IERC20PermitAllowed.sol\":{\"keccak256\":\"0x1495f5068f2b892668447889f379d87decb18c9369f4506df9d23edba9ccb4b7\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6f322bead944abc1da0e75aba72c9e02b22f02c15712f49b212bb65869b406ca\",\"dweb:/ipfs/QmTZAqfg4EwuFAX61ZW4nA55sUbn3o2Qy3W55C3ghPUAWM\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/external/IWETH9.sol\":{\"keccak256\":\"0x04b01ec95f0d2f84238441c9aef03219f4bef075c224c5752978cd9dd0e94c72\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6b0d33db4100951dc4d1e1c08f41869bf504c9613efc8dbda8fca6b3540e93fa\",\"dweb:/ipfs/QmZ9QU2UxKPKkS2MTvNBWXKJUim3kcfLaXZ3c5DS4K7Hx1\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/CallbackValidation.sol\":{\"keccak256\":\"0x5746582acca706899078ff8b36da7022e364bd8631a1fc15d37512ce02595d29\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://7d6629973b50846597a167a4b20869936d994cb61b396b3bac3e2eaa3973e552\",\"dweb:/ipfs/Qme9rPk7AayixV3wHwnq1XcMXDVbZqi2pjBFNcUXqGo8GW\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/ChainId.sol\":{\"keccak256\":\"0xf93eccf17179cbffc0a282499ca51bc2e0a5db7da6fbb44044f9a35f63d100d1\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://399bda620e719110920e4f9fd325049f450a83a1943fa604baa0b131cc269c7a\",\"dweb:/ipfs/QmaUJ51bQ4Jb61537vRYxYydeRas68A7LB2jhoSu5bNAmi\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/LiquidityAmounts.sol\":{\"keccak256\":\"0xa0934989d603edac688fe3d11d5aff28435ec9bfd3036df63023e9e670ee80af\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6fa750bbf8f3b7d8d95bbc10c08e79cce97fad52fff2746f1446dc1d0e351a24\",\"dweb:/ipfs/QmYBBvj1yrXKiiX8auWBnUAwR2HumhSuwV6kj1tiwPipjq\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/PoolAddress.sol\":{\"keccak256\":\"0xd8fca2727cc0b80b46f9bef41aa958c46c075dc785bc3ad3cda3b822e31a7354\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://54877e50ab00753f73eed0a4a9f2ff735401c07e78a76603738a6b9879eb39ae\",\"dweb:/ipfs/QmXuiT99xKNdZVTZ2gQkAxa6rSVKohSxYUU9BtYB5RXX5D\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/PositionKey.sol\":{\"keccak256\":\"0x0a532dba371aed58c383f4e5b8d4ecc7de60eba8c14ef69e40b6e83401ccf74d\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://992d7b2eb0bb01fdbd8169fea0f1c30938023267008cc8c7ab057487858a48b7\",\"dweb:/ipfs/QmZCxsgbiCsPmw4fk3ZRPcot9MSmWqndGP1TGMRsjztjcH\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/TransferHelper.sol\":{\"keccak256\":\"0xdd6bdb15d86cea91b32e431a3665fb02d89cd2e3ac364defdd4996c984f3b2ef\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://ea225076bf821ab6be89f44aeb024ada5ad96dd5b0a59721b57b3634a24da67a\",\"dweb:/ipfs/QmThwpyvdpBuDGfaWQPvnNuTS2bbhr6zCaJB5pGHkxkuj7\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol\":{\"keccak256\":\"0x9f72587289bbaa2c87803231f82b97cc80cb63fa74aedb4c522c9389e3e65941\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://863f722b68957a7b85fe14988948882649ab28cca4e392b146da16e394a6d42f\",\"dweb:/ipfs/QmWXXAH5x2jHydnjcLvfdFY1ACp3FWSs2cDw3ce6kMrS31\"]},\"@openzeppelin/contracts/drafts/IERC20Permit.sol\":{\"keccak256\":\"0x1aab7754719ba764a8a05bec47e975001400f62986474945eb3dbee6d871259f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c14e8ff1b384bdb68f262669364b1e79fbbd82b85938b7ce788a1395c40c6a2\",\"dweb:/ipfs/QmUKLXfSeEuRUXkeWLBhjHTKeSFoNBCS1RaMXv1AmHXYzn\"]},\"@openzeppelin/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0x234cdf2c3efd5f0dc17d32fe65d33c21674ca17de1e945eb60ac1076d7152d96\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd196df6ec4549923b4581fcb4be3d05237b5221067410d0bc34cb76d4174441\",\"dweb:/ipfs/Qmf2vFVgbfpD4FvAhQXkprg9sKSX3TXKRdbQTSjJVEmzWj\"]},\"@openzeppelin/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xd2f30fad5b24c4120f96dbac83aacdb7993ee610a9092bc23c44463da292bf8d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e3d4e72409e392c7694b6405a0136cf073d8da016df33ef8f9ad195f724ebfea\",\"dweb:/ipfs/QmPGcddKq6CgsiKnxUUif2q76wRqP3dmdQ6bKuHCLmb8Wa\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xe22a1fc7400ae196eba2ad1562d0386462b00a6363b742d55a2fd2021a58586f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4a635cec58fb4141a16cfd408f1a21ac944c335a3beaba541c35d2e95c04536f\",\"dweb:/ipfs/QmXWcz73UenN1ji8jiWMbzxHjjfLbNQwLVKTEB5zNFE34K\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b\",\"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x93e4f65a89c3c888afbaa3ee18c3fa4f51c422419bbcd9cca47676a0f8e507ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1a9c54b2935c810e14b17d6b5d7adeb0e1733d172823f02c30e1be8729715841\",\"dweb:/ipfs/QmZGveXLQpqJQRjfeNws7mGSjxKpnfZCnKaXyH4soxDSkR\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xb11597841d47f7a773bca63ca323c76f804cb5d944788de0327db5526319dc82\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://930d2da1934886a1098753be4173dd89c45ca0b306a1930accd37e00b1af4aaf\",\"dweb:/ipfs/QmVSXnvEV41d43k8cfpANHoTYMKgBDBL8iCbxkLfEtQZBe\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol\":{\"keccak256\":\"0x2789dfea2d73182683d637db5729201f6730dae6113030a94c828f8688f38f2f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://36374eaa68c0737bf7e1ae13d55327b4868fb0825e971ee729f4b8d355ededb4\",\"dweb:/ipfs/QmYN9yuzz4P5SumiT6rgYgTEY8MhnPQapMwx2LHxRKju7r\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0xc82c7d1d732081d9bd23f1555ebdf8f3bc1738bc42c2bfc4b9aa7564d9fa3573\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5cb07e4ff3352161510a0d1536fe93f3c62526358e073a8bab2a8abbb27d0da1\",\"dweb:/ipfs/QmX7K1JjnWKT1JzZT92Qx5zNJQYbssE533TLFHP88hj2fb\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x05604ffcf69e416b8a42728bb0e4fd75170d8fac70bf1a284afeb4752a9bc52f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a8a7fd1043372336ecccdbcbcf4962c6df8958dc9c7c7f8361fc2b3dd23570cc\",\"dweb:/ipfs/QmYHKgZxnanBfu7Q8ZicVhDDuB7XRGxuwvmCjfQQ1E5j39\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0xf89f005a3d98f7768cdee2583707db0ac725cf567d455751af32ee68132f3db3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f963d438177764b5f43f637c02311c951c0f0025d12fe1ac7e62e295bf416c41\",\"dweb:/ipfs/QmcfVb9JsWrYeTwFUJsKVHpKB7EaWBKydAH9S4sKg2pzcK\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"@openzeppelin/contracts/utils/EnumerableMap.sol\":{\"keccak256\":\"0x2114555153edb5f273008b3d34205f511db9af06b88f752e4c280dd612c4c549\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8779df50f4f716c6adaa5f61880c572abb2b37197d690d6aad32e52a32d5f382\",\"dweb:/ipfs/QmVuZMGNFEo4gm1QB55gnCwCTc7XC5npkmgdfeJUgHbMiL\"]},\"@openzeppelin/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x9a2c1eebb65250f0e11882237038600f22a62376f0547db4acc0dfe0a3d8d34f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ccafc1afbcbf54559beea9c029d0b7656c56a185813c5fa74c4ea3eb4b608419\",\"dweb:/ipfs/QmTKwdbenDfNwmwRVh8VKtA6mhFK2AyTFRoJF3BqLB81KM\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0x08e38e034333372aea8cb1b8846085b7fbab42c6b77a0af464d2c6827827c4f0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://22746e9348187309fb4fbd3f79f6ad88787103eac10f24bd18f67257fafdd8ad\",\"dweb:/ipfs/QmSLXfXg8b27Xstq58DFGvCpqgtTqpfrGbLMq19PtEKQJS\"]},\"@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol\":{\"keccak256\":\"0xcc3d0c93fc9ac0febbe09f941b465b57f750bcf3b48432da0b97dc289cfdc489\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b9379ad954680c44a0bc523b314ae4c4da735f9fe1d02aa56ea5bdba6f1136f2\",\"dweb:/ipfs/QmZXdgQNXKAckrXWz9R3mc47F1fvDvr28a2ewJrwNAw71B\"]},\"@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol\":{\"keccak256\":\"0xfe6113d518466cd6652c85b111e01f33eb62157f49ae5ed7d5a3947a2044adb1\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://1c42b9e6f5902ac38dd43e25750939baa7e0c1425dc75afd717c4412731065d5\",\"dweb:/ipfs/QmWaoacnzsucTvBME2o7YgZBZMhaHv7fkj83htHMVWJKWh\"]},\"@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3MintCallback.sol\":{\"keccak256\":\"0x27a9725b8f831a92d16380860c3d348a0b926a7f01b34a54ea6eea78cbdbcd6a\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://7c37ca742c643ca4ba6baadff72b8450c6e340a30f7fea0863dba74030a9bbc7\",\"dweb:/ipfs/QmeKBR6a7tQSX85Q7Lb2wrAWSEFqhC4tTmLo4SzcN3kFmp\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol\":{\"keccak256\":\"0x9453dd0e7442188667d01d9b65de3f1e14e9511ff3e303179a15f6fc267f7634\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://982f4328f956c3e60e67501e759eb292ac487f76460c774c50e9ae4fcc92aae5\",\"dweb:/ipfs/QmRnzEDsaqtd9PJEVcgQi7p5aV5pMSvRUoGZJAdwFUJxgZ\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol\":{\"keccak256\":\"0xe603ac5b17ecdee73ba2b27efdf386c257a19c14206e87eee77e2017b742d9e5\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://8febc9bdb399a4d94bb89f5377732652e2400e4a8dee808201ade6848f9004e7\",\"dweb:/ipfs/QmaKDqYYFU4d2W2iN77aDHptfbFmYZRrMYXHeGpJmM8C1c\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol\":{\"keccak256\":\"0x8071514d0fe5d17d6fbd31c191cdfb703031c24e0ece3621d88ab10e871375cd\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://d0b571930cc7488b1d546a7e9cea7c52d8b3c4e207da657ed0e0db7343b8cd03\",\"dweb:/ipfs/QmaGK6vVwB95QSTR1XMYvrh7ivYAYZxi3fD7v6VMA4jZ39\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol\":{\"keccak256\":\"0xf6e5d2cd1139c4c276bdbc8e1d2b256e456c866a91f1b868da265c6d2685c3f7\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b99c8c9ae8e27ee6559e5866bea82cbc9ffc8247f8d15b7422a4deb287d4d047\",\"dweb:/ipfs/QmfL8gaqt3ffAnm6nVj5ksuNpLygXuL3xq5VBqrkwC2JJ3\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol\":{\"keccak256\":\"0x759b78a2918af9e99e246dc3af084f654e48ef32bb4e4cb8a966aa3dcaece235\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://64144fb96e1c7fdba87305acadb98a198d26a3d46c097cb3a666e567f6f29735\",\"dweb:/ipfs/QmUnWVwN9FKB9uV5Pr8YfLpWZnYM2DENnRMaadZ492JS9u\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol\":{\"keccak256\":\"0x852dc1f5df7dcf7f11e7bb3eed79f0cea72ad4b25f6a9d2c35aafb48925fd49f\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://ed63907c38ff36b0e22bc9ffc53e791ea74f0d4f0e7c257fdfb5aaf8825b1f0f\",\"dweb:/ipfs/QmSQrckghEjs6HVsA5GVgpNpZWvTXMY5eQLF7cN6deFeEg\"]},\"@uniswap/v3-core/contracts/libraries/FixedPoint128.sol\":{\"keccak256\":\"0x2d1f4f73ae0d8f0a210b8d30084659b57c56ac8f2f96011fca36f00a6d417178\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://2ba88933f16cd2df398e19c6ad227268f83c03081b70d243c97116d2ed9bc241\",\"dweb:/ipfs/QmTUGxdh8snzEM9VrTSS47StCg9VVWvvLJtJeNnMTFY4xb\"]},\"@uniswap/v3-core/contracts/libraries/FixedPoint96.sol\":{\"keccak256\":\"0x0ba8a9b95a956a4050749c0158e928398c447c91469682ca8a7cc7e77a7fe032\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://186d3b528866065a5856f96d2aeec698efa99f8da913e9adf34f8cc296cc993d\",\"dweb:/ipfs/QmUAiMvtAQp8c9dy57bqJYzG7hkb1uChiPaQmt264skoqP\"]},\"@uniswap/v3-core/contracts/libraries/FullMath.sol\":{\"keccak256\":\"0xe511530871deaef86692cea9adb6076d26d7b47fd4815ce51af52af981026057\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bc5a6ae776be3e7dcbd23d49ffbc9d792fed0ddf4b111ebb64b9bb2133ec263e\",\"dweb:/ipfs/QmbAUtWqvipzEARQpFpkzYKBELy3qeW5WXnZxHFU84sxG7\"]},\"@uniswap/v3-core/contracts/libraries/TickMath.sol\":{\"keccak256\":\"0x1f864a2bf61ba05f3173eaf2e3f94c5e1da4bec0554757527b6d1ef1fe439e4e\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://5139b586df546a9d1c46804ca400b1cb9ce87236eaf212ebd64edee6747a172a\",\"dweb:/ipfs/QmVa2kcRw3VyuB6j1EVWXACKnkbQZgfXYXNi5voq3XkYG8\"]}},\"version\":1}",
+  "bytecode": "0x60a060405234801561001057600080fd5b506040516101933803806101938339818101604052602081101561003357600080fd5b5051606081901b6001600160601b0319166080526001600160a01b031661012d610066600039806061525061012d6000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063994ea42c14602d575b600080fd5b604760048036036020811015604157600080fd5b50356059565b60408051918252519081900360200190f35b6000805a90507f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166399fbab88846040518263ffffffff1660e01b8152600401808281526020019150506101806040518083038186803b15801560c357600080fd5b505afa15801560d6573d6000803e3d6000fd5b505050506040513d61018081101560ec57600080fd5b50505a90039291505056fea2646970667358221220bb327566af28311b3c0d99a2bd99b3734463d221a28b3e882605adc6e539bd6364736f6c63430007060033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063994ea42c14602d575b600080fd5b604760048036036020811015604157600080fd5b50356059565b60408051918252519081900360200190f35b6000805a90507f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166399fbab88846040518263ffffffff1660e01b8152600401808281526020019150506101806040518083038186803b15801560c357600080fd5b505afa15801560d6573d6000803e3d6000fd5b505050506040513d61018081101560ec57600080fd5b50505a90039291505056fea2646970667358221220bb327566af28311b3c0d99a2bd99b3734463d221a28b3e882605adc6e539bd6364736f6c63430007060033",
+  "immutableReferences": {
+    "11042": [
+      {
+        "length": 32,
+        "start": 97
+      }
+    ]
+  },
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "114:508:57:-:0;;;245:143;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;245:143:57;324:56;;;;-1:-1:-1;;;;;;324:56:57;;;-1:-1:-1;;;;;114:508:57;;;;;;;;",
+  "deployedSourceMap": "114:508:57:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;396:223;;;;;;;;;;;;;;;;-1:-1:-1;396:223:57;;:::i;:::-;;;;;;;;;;;;;;;;;467:7;487:17;507:9;487:29;;527:26;-1:-1:-1;;;;;527:36:57;;564:7;527:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;602:9:57;590:21;;;396:223;-1:-1:-1;;396:223:57:o",
+  "source": "// SPDX-License-Identifier: UNLICENSED\r\npragma solidity =0.7.6;\r\n\r\nimport '../NonfungiblePositionManager.sol';\r\n\r\ncontract NonfungiblePositionManagerPositionsGasTest {\r\n    NonfungiblePositionManager immutable nonfungiblePositionManager;\r\n\r\n    constructor(NonfungiblePositionManager _nonfungiblePositionManager) {\r\n        nonfungiblePositionManager = _nonfungiblePositionManager;\r\n    }\r\n\r\n    function getGasCostOfPositions(uint256 tokenId) external view returns (uint256) {\r\n        uint256 gasBefore = gasleft();\r\n        nonfungiblePositionManager.positions(tokenId);\r\n        return gasBefore - gasleft();\r\n    }\r\n}\r\n",
+  "sourcePath": "D:/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol",
+  "ast": {
+    "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol",
+    "exportedSymbols": {
+      "Address": [
+        14953
+      ],
+      "BlockTimestamp": [
+        2610
+      ],
+      "CallbackValidation": [
+        6158
+      ],
+      "ChainId": [
+        6170
+      ],
+      "Context": [
+        14976
+      ],
+      "ERC165": [
+        12394
+      ],
+      "ERC721": [
+        14465
+      ],
+      "ERC721Permit": [
+        2820
+      ],
+      "EnumerableMap": [
+        15586
+      ],
+      "EnumerableSet": [
+        16078
+      ],
+      "FixedPoint128": [
+        17704
+      ],
+      "FixedPoint96": [
+        17714
+      ],
+      "FullMath": [
+        17887
+      ],
+      "IERC1271": [
+        4596
+      ],
+      "IERC165": [
+        12406
+      ],
+      "IERC20": [
+        13521
+      ],
+      "IERC20Permit": [
+        12337
+      ],
+      "IERC20PermitAllowed": [
+        4620
+      ],
+      "IERC721": [
+        14581
+      ],
+      "IERC721Enumerable": [
+        14612
+      ],
+      "IERC721Metadata": [
+        14639
+      ],
+      "IERC721Permit": [
+        3881
+      ],
+      "IERC721Receiver": [
+        14657
+      ],
+      "IMulticall": [
+        3896
+      ],
+      "INonfungiblePositionManager": [
+        4091
+      ],
+      "INonfungibleTokenPositionDescriptor": [
+        4106
+      ],
+      "IPeripheryImmutableState": [
+        4122
+      ],
+      "IPeripheryPayments": [
+        4148
+      ],
+      "IPoolInitializer": [
+        4200
+      ],
+      "ISelfPermit": [
+        4416
+      ],
+      "IUniswapV3Factory": [
+        16948
+      ],
+      "IUniswapV3MintCallback": [
+        16984
+      ],
+      "IUniswapV3Pool": [
+        16970
+      ],
+      "IUniswapV3PoolActions": [
+        17094
+      ],
+      "IUniswapV3PoolDerivedState": [
+        17125
+      ],
+      "IUniswapV3PoolEvents": [
+        17244
+      ],
+      "IUniswapV3PoolImmutables": [
+        17284
+      ],
+      "IUniswapV3PoolOwnerActions": [
+        17310
+      ],
+      "IUniswapV3PoolState": [
+        17418
+      ],
+      "IWETH9": [
+        4637
+      ],
+      "LiquidityAmounts": [
+        6645
+      ],
+      "LiquidityManagement": [
+        3035
+      ],
+      "Multicall": [
+        3120
+      ],
+      "NonfungiblePositionManager": [
+        1121
+      ],
+      "NonfungiblePositionManagerPositionsGasTest": [
+        11077
+      ],
+      "PeripheryImmutableState": [
+        3151
+      ],
+      "PeripheryPayments": [
+        3361
+      ],
+      "PeripheryValidation": [
+        3562
+      ],
+      "PoolAddress": [
+        9708
+      ],
+      "PoolInitializer": [
+        3654
+      ],
+      "PositionKey": [
+        10041
+      ],
+      "SafeMath": [
+        12761
+      ],
+      "SelfPermit": [
+        3821
+      ],
+      "Strings": [
+        16165
+      ],
+      "TickMath": [
+        18878
+      ],
+      "TransferHelper": [
+        10236
+      ]
+    },
+    "id": 11078,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11039,
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:23:57"
+      },
+      {
+        "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/NonfungiblePositionManager.sol",
+        "file": "../NonfungiblePositionManager.sol",
+        "id": 11040,
+        "nodeType": "ImportDirective",
+        "scope": 11078,
+        "sourceUnit": 1122,
+        "src": "67:43:57",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 11077,
+        "linearizedBaseContracts": [
+          11077
+        ],
+        "name": "NonfungiblePositionManagerPositionsGasTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 11042,
+            "mutability": "immutable",
+            "name": "nonfungiblePositionManager",
+            "nodeType": "VariableDeclaration",
+            "scope": 11077,
+            "src": "173:63:57",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_NonfungiblePositionManager_$1121",
+              "typeString": "contract NonfungiblePositionManager"
+            },
+            "typeName": {
+              "id": 11041,
+              "name": "NonfungiblePositionManager",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1121,
+              "src": "173:26:57",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_NonfungiblePositionManager_$1121",
+                "typeString": "contract NonfungiblePositionManager"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 11051,
+              "nodeType": "Block",
+              "src": "313:75:57",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 11049,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 11047,
+                      "name": "nonfungiblePositionManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11042,
+                      "src": "324:26:57",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_NonfungiblePositionManager_$1121",
+                        "typeString": "contract NonfungiblePositionManager"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 11048,
+                      "name": "_nonfungiblePositionManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11044,
+                      "src": "353:27:57",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_NonfungiblePositionManager_$1121",
+                        "typeString": "contract NonfungiblePositionManager"
+                      }
+                    },
+                    "src": "324:56:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_NonfungiblePositionManager_$1121",
+                      "typeString": "contract NonfungiblePositionManager"
+                    }
+                  },
+                  "id": 11050,
+                  "nodeType": "ExpressionStatement",
+                  "src": "324:56:57"
+                }
+              ]
+            },
+            "id": 11052,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11045,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11044,
+                  "mutability": "mutable",
+                  "name": "_nonfungiblePositionManager",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11052,
+                  "src": "257:54:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_NonfungiblePositionManager_$1121",
+                    "typeString": "contract NonfungiblePositionManager"
+                  },
+                  "typeName": {
+                    "id": 11043,
+                    "name": "NonfungiblePositionManager",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1121,
+                    "src": "257:26:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_NonfungiblePositionManager_$1121",
+                      "typeString": "contract NonfungiblePositionManager"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "256:56:57"
+            },
+            "returnParameters": {
+              "id": 11046,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "313:0:57"
+            },
+            "scope": 11077,
+            "src": "245:143:57",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11075,
+              "nodeType": "Block",
+              "src": "476:143:57",
+              "statements": [
+                {
+                  "assignments": [
+                    11060
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 11060,
+                      "mutability": "mutable",
+                      "name": "gasBefore",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 11075,
+                      "src": "487:17:57",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 11059,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "487:7:57",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 11063,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 11061,
+                      "name": "gasleft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4294967289,
+                      "src": "507:7:57",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 11062,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "507:9:57",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "487:29:57"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 11067,
+                        "name": "tokenId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11054,
+                        "src": "564:7:57",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 11064,
+                        "name": "nonfungiblePositionManager",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11042,
+                        "src": "527:26:57",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_NonfungiblePositionManager_$1121",
+                          "typeString": "contract NonfungiblePositionManager"
+                        }
+                      },
+                      "id": 11066,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "positions",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 217,
+                      "src": "527:36:57",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_uint96_$_t_address_$_t_address_$_t_address_$_t_uint24_$_t_int24_$_t_int24_$_t_uint128_$_t_uint256_$_t_uint256_$_t_uint128_$_t_uint128_$",
+                        "typeString": "function (uint256) view external returns (uint96,address,address,address,uint24,int24,int24,uint128,uint256,uint256,uint128,uint128)"
+                      }
+                    },
+                    "id": 11068,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "527:45:57",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint96_$_t_address_$_t_address_$_t_address_$_t_uint24_$_t_int24_$_t_int24_$_t_uint128_$_t_uint256_$_t_uint256_$_t_uint128_$_t_uint128_$",
+                      "typeString": "tuple(uint96,address,address,address,uint24,int24,int24,uint128,uint256,uint256,uint128,uint128)"
+                    }
+                  },
+                  "id": 11069,
+                  "nodeType": "ExpressionStatement",
+                  "src": "527:45:57"
+                },
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 11073,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 11070,
+                      "name": "gasBefore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11060,
+                      "src": "590:9:57",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "-",
+                    "rightExpression": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 11071,
+                        "name": "gasleft",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4294967289,
+                        "src": "602:7:57",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                          "typeString": "function () view returns (uint256)"
+                        }
+                      },
+                      "id": 11072,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "602:9:57",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "590:21:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 11058,
+                  "id": 11074,
+                  "nodeType": "Return",
+                  "src": "583:28:57"
+                }
+              ]
+            },
+            "functionSelector": "994ea42c",
+            "id": 11076,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getGasCostOfPositions",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11055,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11054,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11076,
+                  "src": "427:15:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11053,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "427:7:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "426:17:57"
+            },
+            "returnParameters": {
+              "id": 11058,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11057,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11076,
+                  "src": "467:7:57",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11056,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "467:7:57",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "466:9:57"
+            },
+            "scope": 11077,
+            "src": "396:223:57",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11078,
+        "src": "114:508:57"
+      }
+    ],
+    "src": "40:584:57"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol",
+      "exportedSymbols": {
+        "Address": [
+          14953
+        ],
+        "BlockTimestamp": [
+          2610
+        ],
+        "CallbackValidation": [
+          6158
+        ],
+        "ChainId": [
+          6170
+        ],
+        "Context": [
+          14976
+        ],
+        "ERC165": [
+          12394
+        ],
+        "ERC721": [
+          14465
+        ],
+        "ERC721Permit": [
+          2820
+        ],
+        "EnumerableMap": [
+          15586
+        ],
+        "EnumerableSet": [
+          16078
+        ],
+        "FixedPoint128": [
+          17704
+        ],
+        "FixedPoint96": [
+          17714
+        ],
+        "FullMath": [
+          17887
+        ],
+        "IERC1271": [
+          4596
+        ],
+        "IERC165": [
+          12406
+        ],
+        "IERC20": [
+          13521
+        ],
+        "IERC20Permit": [
+          12337
+        ],
+        "IERC20PermitAllowed": [
+          4620
+        ],
+        "IERC721": [
+          14581
+        ],
+        "IERC721Enumerable": [
+          14612
+        ],
+        "IERC721Metadata": [
+          14639
+        ],
+        "IERC721Permit": [
+          3881
+        ],
+        "IERC721Receiver": [
+          14657
+        ],
+        "IMulticall": [
+          3896
+        ],
+        "INonfungiblePositionManager": [
+          4091
+        ],
+        "INonfungibleTokenPositionDescriptor": [
+          4106
+        ],
+        "IPeripheryImmutableState": [
+          4122
+        ],
+        "IPeripheryPayments": [
+          4148
+        ],
+        "IPoolInitializer": [
+          4200
+        ],
+        "ISelfPermit": [
+          4416
+        ],
+        "IUniswapV3Factory": [
+          16948
+        ],
+        "IUniswapV3MintCallback": [
+          16984
+        ],
+        "IUniswapV3Pool": [
+          16970
+        ],
+        "IUniswapV3PoolActions": [
+          17094
+        ],
+        "IUniswapV3PoolDerivedState": [
+          17125
+        ],
+        "IUniswapV3PoolEvents": [
+          17244
+        ],
+        "IUniswapV3PoolImmutables": [
+          17284
+        ],
+        "IUniswapV3PoolOwnerActions": [
+          17310
+        ],
+        "IUniswapV3PoolState": [
+          17418
+        ],
+        "IWETH9": [
+          4637
+        ],
+        "LiquidityAmounts": [
+          6645
+        ],
+        "LiquidityManagement": [
+          3035
+        ],
+        "Multicall": [
+          3120
+        ],
+        "NonfungiblePositionManager": [
+          1121
+        ],
+        "NonfungiblePositionManagerPositionsGasTest": [
+          11077
+        ],
+        "PeripheryImmutableState": [
+          3151
+        ],
+        "PeripheryPayments": [
+          3361
+        ],
+        "PeripheryValidation": [
+          3562
+        ],
+        "PoolAddress": [
+          9708
+        ],
+        "PoolInitializer": [
+          3654
+        ],
+        "PositionKey": [
+          10041
+        ],
+        "SafeMath": [
+          12761
+        ],
+        "SelfPermit": [
+          3821
+        ],
+        "Strings": [
+          16165
+        ],
+        "TickMath": [
+          18878
+        ],
+        "TransferHelper": [
+          10236
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "=",
+            "0.7",
+            ".6"
+          ]
+        },
+        "id": 11039,
+        "name": "PragmaDirective",
+        "src": "40:23:57"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1122,
+          "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/NonfungiblePositionManager.sol",
+          "file": "../NonfungiblePositionManager.sol",
+          "scope": 11078,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 11040,
+        "name": "ImportDirective",
+        "src": "67:43:57"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            11077
+          ],
+          "name": "NonfungiblePositionManagerPositionsGasTest",
+          "scope": 11078
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "immutable",
+              "name": "nonfungiblePositionManager",
+              "scope": 11077,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract NonfungiblePositionManager",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "NonfungiblePositionManager",
+                  "referencedDeclaration": 1121,
+                  "type": "contract NonfungiblePositionManager"
+                },
+                "id": 11041,
+                "name": "UserDefinedTypeName",
+                "src": "173:26:57"
+              }
+            ],
+            "id": 11042,
+            "name": "VariableDeclaration",
+            "src": "173:63:57"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 11077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_nonfungiblePositionManager",
+                      "scope": 11052,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract NonfungiblePositionManager",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "NonfungiblePositionManager",
+                          "referencedDeclaration": 1121,
+                          "type": "contract NonfungiblePositionManager"
+                        },
+                        "id": 11043,
+                        "name": "UserDefinedTypeName",
+                        "src": "257:26:57"
+                      }
+                    ],
+                    "id": 11044,
+                    "name": "VariableDeclaration",
+                    "src": "257:54:57"
+                  }
+                ],
+                "id": 11045,
+                "name": "ParameterList",
+                "src": "256:56:57"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 11046,
+                "name": "ParameterList",
+                "src": "313:0:57"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract NonfungiblePositionManager"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11042,
+                              "type": "contract NonfungiblePositionManager",
+                              "value": "nonfungiblePositionManager"
+                            },
+                            "id": 11047,
+                            "name": "Identifier",
+                            "src": "324:26:57"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11044,
+                              "type": "contract NonfungiblePositionManager",
+                              "value": "_nonfungiblePositionManager"
+                            },
+                            "id": 11048,
+                            "name": "Identifier",
+                            "src": "353:27:57"
+                          }
+                        ],
+                        "id": 11049,
+                        "name": "Assignment",
+                        "src": "324:56:57"
+                      }
+                    ],
+                    "id": 11050,
+                    "name": "ExpressionStatement",
+                    "src": "324:56:57"
+                  }
+                ],
+                "id": 11051,
+                "name": "Block",
+                "src": "313:75:57"
+              }
+            ],
+            "id": 11052,
+            "name": "FunctionDefinition",
+            "src": "245:143:57"
+          },
+          {
+            "attributes": {
+              "functionSelector": "994ea42c",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getGasCostOfPositions",
+              "scope": 11077,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "tokenId",
+                      "scope": 11076,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 11053,
+                        "name": "ElementaryTypeName",
+                        "src": "427:7:57"
+                      }
+                    ],
+                    "id": 11054,
+                    "name": "VariableDeclaration",
+                    "src": "427:15:57"
+                  }
+                ],
+                "id": 11055,
+                "name": "ParameterList",
+                "src": "426:17:57"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 11076,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 11056,
+                        "name": "ElementaryTypeName",
+                        "src": "467:7:57"
+                      }
+                    ],
+                    "id": 11057,
+                    "name": "VariableDeclaration",
+                    "src": "467:7:57"
+                  }
+                ],
+                "id": 11058,
+                "name": "ParameterList",
+                "src": "466:9:57"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        11060
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "mutability": "mutable",
+                          "name": "gasBefore",
+                          "scope": 11075,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 11059,
+                            "name": "ElementaryTypeName",
+                            "src": "487:7:57"
+                          }
+                        ],
+                        "id": 11060,
+                        "name": "VariableDeclaration",
+                        "src": "487:17:57"
+                      },
+                      {
+                        "attributes": {
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4294967289,
+                              "type": "function () view returns (uint256)",
+                              "value": "gasleft"
+                            },
+                            "id": 11061,
+                            "name": "Identifier",
+                            "src": "507:7:57"
+                          }
+                        ],
+                        "id": 11062,
+                        "name": "FunctionCall",
+                        "src": "507:9:57"
+                      }
+                    ],
+                    "id": 11063,
+                    "name": "VariableDeclarationStatement",
+                    "src": "487:29:57"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple(uint96,address,address,address,uint24,int24,int24,uint128,uint256,uint256,uint128,uint128)",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "positions",
+                              "referencedDeclaration": 217,
+                              "type": "function (uint256) view external returns (uint96,address,address,address,uint24,int24,int24,uint128,uint256,uint256,uint128,uint128)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 11042,
+                                  "type": "contract NonfungiblePositionManager",
+                                  "value": "nonfungiblePositionManager"
+                                },
+                                "id": 11064,
+                                "name": "Identifier",
+                                "src": "527:26:57"
+                              }
+                            ],
+                            "id": 11066,
+                            "name": "MemberAccess",
+                            "src": "527:36:57"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11054,
+                              "type": "uint256",
+                              "value": "tokenId"
+                            },
+                            "id": 11067,
+                            "name": "Identifier",
+                            "src": "564:7:57"
+                          }
+                        ],
+                        "id": 11068,
+                        "name": "FunctionCall",
+                        "src": "527:45:57"
+                      }
+                    ],
+                    "id": 11069,
+                    "name": "ExpressionStatement",
+                    "src": "527:45:57"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 11058
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "-",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11060,
+                              "type": "uint256",
+                              "value": "gasBefore"
+                            },
+                            "id": 11070,
+                            "name": "Identifier",
+                            "src": "590:9:57"
+                          },
+                          {
+                            "attributes": {
+                              "arguments": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "uint256",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    null
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4294967289,
+                                  "type": "function () view returns (uint256)",
+                                  "value": "gasleft"
+                                },
+                                "id": 11071,
+                                "name": "Identifier",
+                                "src": "602:7:57"
+                              }
+                            ],
+                            "id": 11072,
+                            "name": "FunctionCall",
+                            "src": "602:9:57"
+                          }
+                        ],
+                        "id": 11073,
+                        "name": "BinaryOperation",
+                        "src": "590:21:57"
+                      }
+                    ],
+                    "id": 11074,
+                    "name": "Return",
+                    "src": "583:28:57"
+                  }
+                ],
+                "id": 11075,
+                "name": "Block",
+                "src": "476:143:57"
+              }
+            ],
+            "id": 11076,
+            "name": "FunctionDefinition",
+            "src": "396:223:57"
+          }
+        ],
+        "id": 11077,
+        "name": "ContractDefinition",
+        "src": "114:508:57"
+      }
+    ],
+    "id": 11078,
+    "name": "SourceUnit",
+    "src": "40:584:57"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-16T07:48:26.627Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

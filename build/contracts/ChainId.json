@@ -1,0 +1,345 @@
+{
+  "contractName": "ChainId",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"Function for getting the current chain ID\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/ChainId.sol\":\"ChainId\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/ChainId.sol\":{\"keccak256\":\"0xf93eccf17179cbffc0a282499ca51bc2e0a5db7da6fbb44044f9a35f63d100d1\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://399bda620e719110920e4f9fd325049f450a83a1943fa604baa0b131cc269c7a\",\"dweb:/ipfs/QmaUJ51bQ4Jb61537vRYxYydeRas68A7LB2jhoSu5bNAmi\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206d84052f6d83464a9428be234bed963e040f96549fa255c34bf8c982d88537cf64736f6c63430007060033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206d84052f6d83464a9428be234bed963e040f96549fa255c34bf8c982d88537cf64736f6c63430007060033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "128:240:16:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "128:240:16:-:0;;;;;;;;",
+  "source": "// SPDX-License-Identifier: GPL-2.0-or-later\r\npragma solidity >=0.7.0;\r\n\r\n/// @title Function for getting the current chain ID\r\nlibrary ChainId {\r\n    /// @dev Gets the current chain ID\r\n    /// @return chainId The current chain ID\r\n    function get() internal pure returns (uint256 chainId) {\r\n        assembly {\r\n            chainId := chainid()\r\n        }\r\n    }\r\n}\r\n",
+  "sourcePath": "D:/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/ChainId.sol",
+  "ast": {
+    "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/ChainId.sol",
+    "exportedSymbols": {
+      "ChainId": [
+        909
+      ]
+    },
+    "id": 910,
+    "license": "GPL-2.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 899,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:24:16"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 900,
+          "nodeType": "StructuredDocumentation",
+          "src": "74:54:16",
+          "text": "@title Function for getting the current chain ID"
+        },
+        "fullyImplemented": true,
+        "id": 909,
+        "linearizedBaseContracts": [
+          909
+        ],
+        "name": "ChainId",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 907,
+              "nodeType": "Block",
+              "src": "292:73:16",
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "312:46:16",
+                    "statements": [
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "327:20:16",
+                        "value": {
+                          "arguments": [],
+                          "functionName": {
+                            "name": "chainid",
+                            "nodeType": "YulIdentifier",
+                            "src": "338:7:16"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "338:9:16"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "chainId",
+                            "nodeType": "YulIdentifier",
+                            "src": "327:7:16"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "evmVersion": "istanbul",
+                  "externalReferences": [
+                    {
+                      "declaration": 904,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "327:7:16",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 906,
+                  "nodeType": "InlineAssembly",
+                  "src": "303:55:16"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 901,
+              "nodeType": "StructuredDocumentation",
+              "src": "151:80:16",
+              "text": "@dev Gets the current chain ID\n @return chainId The current chain ID"
+            },
+            "id": 908,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 902,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "249:2:16"
+            },
+            "returnParameters": {
+              "id": 905,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 904,
+                  "mutability": "mutable",
+                  "name": "chainId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 908,
+                  "src": "275:15:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 903,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "275:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "274:17:16"
+            },
+            "scope": 909,
+            "src": "237:128:16",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 910,
+        "src": "128:240:16"
+      }
+    ],
+    "src": "46:324:16"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/ChainId.sol",
+      "exportedSymbols": {
+        "ChainId": [
+          909
+        ]
+      },
+      "license": "GPL-2.0-or-later"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.7",
+            ".0"
+          ]
+        },
+        "id": 899,
+        "name": "PragmaDirective",
+        "src": "46:24:16"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "library",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            909
+          ],
+          "name": "ChainId",
+          "scope": 910
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title Function for getting the current chain ID"
+            },
+            "id": 900,
+            "name": "StructuredDocumentation",
+            "src": "74:54:16"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "get",
+              "scope": 909,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@dev Gets the current chain ID\n @return chainId The current chain ID"
+                },
+                "id": 901,
+                "name": "StructuredDocumentation",
+                "src": "151:80:16"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 902,
+                "name": "ParameterList",
+                "src": "249:2:16"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "chainId",
+                      "scope": 908,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 903,
+                        "name": "ElementaryTypeName",
+                        "src": "275:7:16"
+                      }
+                    ],
+                    "id": 904,
+                    "name": "VariableDeclaration",
+                    "src": "275:15:16"
+                  }
+                ],
+                "id": 905,
+                "name": "ParameterList",
+                "src": "274:17:16"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "evmVersion": "istanbul",
+                      "externalReferences": [
+                        {
+                          "declaration": 904,
+                          "isOffset": false,
+                          "isSlot": false,
+                          "src": "327:7:16",
+                          "valueSize": 1
+                        }
+                      ],
+                      "operations": "{ chainId := chainid() }"
+                    },
+                    "children": [],
+                    "id": 906,
+                    "name": "InlineAssembly",
+                    "src": "303:55:16"
+                  }
+                ],
+                "id": 907,
+                "name": "Block",
+                "src": "292:73:16"
+              }
+            ],
+            "id": 908,
+            "name": "FunctionDefinition",
+            "src": "237:128:16"
+          }
+        ],
+        "id": 909,
+        "name": "ContractDefinition",
+        "src": "128:240:16"
+      }
+    ],
+    "id": 910,
+    "name": "SourceUnit",
+    "src": "46:324:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-20T10:26:19.505Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "title": "Function for getting the current chain ID",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

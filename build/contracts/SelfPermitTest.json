@@ -1,0 +1,449 @@
+{
+  "contractName": "SelfPermitTest",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermitAllowed",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermitAllowedIfNecessary",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermitIfNecessary",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"expiry\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermitAllowed\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"expiry\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermitAllowedIfNecessary\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermitIfNecessary\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Same as SelfPermit but not abstract\",\"kind\":\"dev\",\"methods\":{\"selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this).\",\"params\":{\"deadline\":\"A timestamp, the current blocktime must be less than or equal to this timestamp\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\",\"value\":\"The amount that can be spent of token\"}},\"selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this)\",\"params\":{\"expiry\":\"The timestamp at which the permit is no longer valid\",\"nonce\":\"The current nonce of the owner\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\"}},\"selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.\",\"params\":{\"expiry\":\"The timestamp at which the permit is no longer valid\",\"nonce\":\"The current nonce of the owner\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\"}},\"selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit\",\"params\":{\"deadline\":\"A timestamp, the current blocktime must be less than or equal to this timestamp\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\",\"value\":\"The amount that can be spent of token\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend a given token from `msg.sender`\"},\"selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\"},\"selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\"},\"selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend a given token from `msg.sender`\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/SelfPermitTest.sol\":\"SelfPermitTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/SelfPermit.sol\":{\"keccak256\":\"0x6d508a027f7a4a41ccb30a20f84bf29c52d7210d30e968142d064f9ce5c496ae\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://ff72331865afd843ac65d0fd559dc92bcfe1bcd9a2db913c1bdbb9f62224d724\",\"dweb:/ipfs/Qme7YMqjHxoo3RuN9onk9Notw7h512NnVFncAjqX6HuQdV\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/ISelfPermit.sol\":{\"keccak256\":\"0xb442ad31c8fef5c47ebb82b3b3f906d0a5dbca8eb26db90b287a4825bf53d595\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6e36e6e894083ad07e2ba62977a06db0874b8ed1f6eac705f4c9d89a410f54ea\",\"dweb:/ipfs/QmWLWTuKrcCzxZeedLpUG3c8jjFLs5gLmvt35Ysp2uc9c6\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/external/IERC20PermitAllowed.sol\":{\"keccak256\":\"0x1495f5068f2b892668447889f379d87decb18c9369f4506df9d23edba9ccb4b7\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6f322bead944abc1da0e75aba72c9e02b22f02c15712f49b212bb65869b406ca\",\"dweb:/ipfs/QmTZAqfg4EwuFAX61ZW4nA55sUbn3o2Qy3W55C3ghPUAWM\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/SelfPermitTest.sol\":{\"keccak256\":\"0xa02fb74804a30cd4716ab50e2f09e8ebd309d2eb4f611943789f449ddcab57bb\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://f132e284324a22efcd102d0c4390dbe04d03f98edb3a078a2f26d959c58ded99\",\"dweb:/ipfs/QmeYWayFZXwKQRKmJ8K27CYFmkd1oYg5KmWvibfndMhZkc\"]},\"@openzeppelin/contracts/drafts/IERC20Permit.sol\":{\"keccak256\":\"0x1aab7754719ba764a8a05bec47e975001400f62986474945eb3dbee6d871259f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c14e8ff1b384bdb68f262669364b1e79fbbd82b85938b7ce788a1395c40c6a2\",\"dweb:/ipfs/QmUKLXfSeEuRUXkeWLBhjHTKeSFoNBCS1RaMXv1AmHXYzn\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b\",\"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506103c8806100206000396000f3fe60806040526004361061003f5760003560e01c80634659a49414610044578063a4a78f0c1461008d578063c2e3140a146100d4578063f3995c671461011b575b600080fd5b61008b600480360360c081101561005a57600080fd5b506001600160a01b038135169060208101359060408101359060ff6060820135169060808101359060a00135610162565b005b61008b600480360360c08110156100a357600080fd5b506001600160a01b038135169060208101359060408101359060ff6060820135169060808101359060a001356101fc565b61008b600480360360c08110156100ea57600080fd5b506001600160a01b038135169060208101359060408101359060ff6060820135169060808101359060a00135610295565b61008b600480360360c081101561013157600080fd5b506001600160a01b038135169060208101359060408101359060ff6060820135169060808101359060a00135610320565b604080516323f2ebc360e21b815233600482015230602482015260448101879052606481018690526001608482015260ff851660a482015260c4810184905260e4810183905290516001600160a01b03881691638fcbaf0c9161010480830192600092919082900301818387803b1580156101dc57600080fd5b505af11580156101f0573d6000803e3d6000fd5b50505050505050505050565b60408051636eb1769f60e11b81523360048201523060248201529051600019916001600160a01b0389169163dd62ed3e91604480820192602092909190829003018186803b15801561024d57600080fd5b505afa158015610261573d6000803e3d6000fd5b505050506040513d602081101561027757600080fd5b5051101561028d5761028d868686868686610162565b505050505050565b60408051636eb1769f60e11b8152336004820152306024820152905186916001600160a01b0389169163dd62ed3e91604480820192602092909190829003018186803b1580156102e457600080fd5b505afa1580156102f8573d6000803e3d6000fd5b505050506040513d602081101561030e57600080fd5b5051101561028d5761028d8686868686865b6040805163d505accf60e01b8152336004820152306024820152604481018790526064810186905260ff8516608482015260a4810184905260c4810183905290516001600160a01b0388169163d505accf9160e480830192600092919082900301818387803b1580156101dc57600080fdfea26469706673582212206fe850fb1345a8511306fcdda44d12b6a23d7115a2d697fd5915ec1db71e27d264736f6c63430007060033",
+  "deployedBytecode": "0x60806040526004361061003f5760003560e01c80634659a49414610044578063a4a78f0c1461008d578063c2e3140a146100d4578063f3995c671461011b575b600080fd5b61008b600480360360c081101561005a57600080fd5b506001600160a01b038135169060208101359060408101359060ff6060820135169060808101359060a00135610162565b005b61008b600480360360c08110156100a357600080fd5b506001600160a01b038135169060208101359060408101359060ff6060820135169060808101359060a001356101fc565b61008b600480360360c08110156100ea57600080fd5b506001600160a01b038135169060208101359060408101359060ff6060820135169060808101359060a00135610295565b61008b600480360360c081101561013157600080fd5b506001600160a01b038135169060208101359060408101359060ff6060820135169060808101359060a00135610320565b604080516323f2ebc360e21b815233600482015230602482015260448101879052606481018690526001608482015260ff851660a482015260c4810184905260e4810183905290516001600160a01b03881691638fcbaf0c9161010480830192600092919082900301818387803b1580156101dc57600080fd5b505af11580156101f0573d6000803e3d6000fd5b50505050505050505050565b60408051636eb1769f60e11b81523360048201523060248201529051600019916001600160a01b0389169163dd62ed3e91604480820192602092909190829003018186803b15801561024d57600080fd5b505afa158015610261573d6000803e3d6000fd5b505050506040513d602081101561027757600080fd5b5051101561028d5761028d868686868686610162565b505050505050565b60408051636eb1769f60e11b8152336004820152306024820152905186916001600160a01b0389169163dd62ed3e91604480820192602092909190829003018186803b1580156102e457600080fd5b505afa1580156102f8573d6000803e3d6000fd5b505050506040513d602081101561030e57600080fd5b5051101561028d5761028d8686868686865b6040805163d505accf60e01b8152336004820152306024820152604481018790526064810186905260ff8516608482015260a4810184905260c4810183905290516001600160a01b0388169163d505accf9160e480830192600092919082900301818387803b1580156101dc57600080fdfea26469706673582212206fe850fb1345a8511306fcdda44d12b6a23d7115a2d697fd5915ec1db71e27d264736f6c63430007060033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "149:44:63:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "149:44:63:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1364:298:15;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;1364:298:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1703:358;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;1703:358:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;1000:323::-;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;1000:323:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;677:282::-;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;677:282:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;1364:298::-;1564:90;;;-1:-1:-1;;;1564:90:15;;1598:10;1564:90;;;;1618:4;1564:90;;;;;;;;;;;;;;;;1640:4;1564:90;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1564:33:15;;;;;:90;;;;;-1:-1:-1;;1564:90:15;;;;;;;-1:-1:-1;1564:33:15;:90;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1364:298;;;;;;:::o;1703:358::-;1920:50;;;-1:-1:-1;;;1920:50:15;;1944:10;1920:50;;;;1964:4;1920:50;;;;;;-1:-1:-1;;1973:17:15;-1:-1:-1;;;;;1920:23:15;;;;;:50;;;;;;;;;;;;;;;:23;:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1920:50:15;:70;1916:137;;;2005:48;2023:5;2030;2037:6;2045:1;2048;2051;2005:17;:48::i;:::-;1703:358;;;;;;:::o;1000:323::-;1212:50;;;-1:-1:-1;;;1212:50:15;;1236:10;1212:50;;;;1256:4;1212:50;;;;;;1265:5;;-1:-1:-1;;;;;1212:23:15;;;;;:50;;;;;;;;;;;;;;;:23;:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1212:50:15;:58;1208:107;;;1272:43;1283:5;1290;1297:8;1307:1;1310;1313;677:282;872:79;;;-1:-1:-1;;;872:79:15;;899:10;872:79;;;;919:4;872:79;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;872:26:15;;;;;:79;;;;;-1:-1:-1;;872:79:15;;;;;;;-1:-1:-1;872:26:15;:79;;;;;;;;;",
+  "source": "// SPDX-License-Identifier: UNLICENSED\r\npragma solidity =0.7.6;\r\n\r\nimport '../base/SelfPermit.sol';\r\n\r\n/// @dev Same as SelfPermit but not abstract\r\ncontract SelfPermitTest is SelfPermit {\r\n\r\n}\r\n",
+  "sourcePath": "D:/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/SelfPermitTest.sol",
+  "ast": {
+    "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/SelfPermitTest.sol",
+    "exportedSymbols": {
+      "IERC20": [
+        13521
+      ],
+      "IERC20Permit": [
+        12337
+      ],
+      "IERC20PermitAllowed": [
+        4620
+      ],
+      "ISelfPermit": [
+        4416
+      ],
+      "SelfPermit": [
+        3821
+      ],
+      "SelfPermitTest": [
+        11392
+      ]
+    },
+    "id": 11393,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11387,
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:23:63"
+      },
+      {
+        "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/SelfPermit.sol",
+        "file": "../base/SelfPermit.sol",
+        "id": 11388,
+        "nodeType": "ImportDirective",
+        "scope": 11393,
+        "sourceUnit": 3822,
+        "src": "67:32:63",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 11390,
+              "name": "SelfPermit",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3821,
+              "src": "176:10:63",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SelfPermit_$3821",
+                "typeString": "contract SelfPermit"
+              }
+            },
+            "id": 11391,
+            "nodeType": "InheritanceSpecifier",
+            "src": "176:10:63"
+          }
+        ],
+        "contractDependencies": [
+          3821,
+          4416
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 11389,
+          "nodeType": "StructuredDocumentation",
+          "src": "103:46:63",
+          "text": "@dev Same as SelfPermit but not abstract"
+        },
+        "fullyImplemented": true,
+        "id": 11392,
+        "linearizedBaseContracts": [
+          11392,
+          3821,
+          4416
+        ],
+        "name": "SelfPermitTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 11393,
+        "src": "149:44:63"
+      }
+    ],
+    "src": "40:155:63"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/SelfPermitTest.sol",
+      "exportedSymbols": {
+        "IERC20": [
+          13521
+        ],
+        "IERC20Permit": [
+          12337
+        ],
+        "IERC20PermitAllowed": [
+          4620
+        ],
+        "ISelfPermit": [
+          4416
+        ],
+        "SelfPermit": [
+          3821
+        ],
+        "SelfPermitTest": [
+          11392
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "=",
+            "0.7",
+            ".6"
+          ]
+        },
+        "id": 11387,
+        "name": "PragmaDirective",
+        "src": "40:23:63"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 3822,
+          "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/SelfPermit.sol",
+          "file": "../base/SelfPermit.sol",
+          "scope": 11393,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 11388,
+        "name": "ImportDirective",
+        "src": "67:32:63"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            3821,
+            4416
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            11392,
+            3821,
+            4416
+          ],
+          "name": "SelfPermitTest",
+          "nodes": [
+            null
+          ],
+          "scope": 11393
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@dev Same as SelfPermit but not abstract"
+            },
+            "id": 11389,
+            "name": "StructuredDocumentation",
+            "src": "103:46:63"
+          },
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "SelfPermit",
+                  "referencedDeclaration": 3821,
+                  "type": "contract SelfPermit"
+                },
+                "id": 11390,
+                "name": "UserDefinedTypeName",
+                "src": "176:10:63"
+              }
+            ],
+            "id": 11391,
+            "name": "InheritanceSpecifier",
+            "src": "176:10:63"
+          }
+        ],
+        "id": 11392,
+        "name": "ContractDefinition",
+        "src": "149:44:63"
+      }
+    ],
+    "id": 11393,
+    "name": "SourceUnit",
+    "src": "40:155:63"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-16T07:48:26.635Z",
+  "devdoc": {
+    "details": "Same as SelfPermit but not abstract",
+    "kind": "dev",
+    "methods": {
+      "selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "details": "The `owner` is always msg.sender and the `spender` is always address(this).",
+        "params": {
+          "deadline": "A timestamp, the current blocktime must be less than or equal to this timestamp",
+          "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+          "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+          "token": "The address of the token spent",
+          "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`",
+          "value": "The amount that can be spent of token"
+        }
+      },
+      "selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "details": "The `owner` is always msg.sender and the `spender` is always address(this)",
+        "params": {
+          "expiry": "The timestamp at which the permit is no longer valid",
+          "nonce": "The current nonce of the owner",
+          "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+          "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+          "token": "The address of the token spent",
+          "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`"
+        }
+      },
+      "selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "details": "The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.",
+        "params": {
+          "expiry": "The timestamp at which the permit is no longer valid",
+          "nonce": "The current nonce of the owner",
+          "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+          "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+          "token": "The address of the token spent",
+          "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`"
+        }
+      },
+      "selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "details": "The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit",
+        "params": {
+          "deadline": "A timestamp, the current blocktime must be less than or equal to this timestamp",
+          "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+          "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+          "token": "The address of the token spent",
+          "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`",
+          "value": "The amount that can be spent of token"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Permits this contract to spend a given token from `msg.sender`"
+      },
+      "selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter"
+      },
+      "selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter"
+      },
+      "selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Permits this contract to spend a given token from `msg.sender`"
+      }
+    },
+    "version": 1
+  }
+}

@@ -1,0 +1,831 @@
+{
+  "contractName": "TestCallbackValidation",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "factory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenB",
+          "type": "address"
+        },
+        {
+          "internalType": "uint24",
+          "name": "fee",
+          "type": "uint24"
+        }
+      ],
+      "name": "verifyCallback",
+      "outputs": [
+        {
+          "internalType": "contract IUniswapV3Pool",
+          "name": "pool",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"factory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"}],\"name\":\"verifyCallback\",\"outputs\":[{\"internalType\":\"contract IUniswapV3Pool\",\"name\":\"pool\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/TestCallbackValidation.sol\":\"TestCallbackValidation\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/CallbackValidation.sol\":{\"keccak256\":\"0x5746582acca706899078ff8b36da7022e364bd8631a1fc15d37512ce02595d29\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://7d6629973b50846597a167a4b20869936d994cb61b396b3bac3e2eaa3973e552\",\"dweb:/ipfs/Qme9rPk7AayixV3wHwnq1XcMXDVbZqi2pjBFNcUXqGo8GW\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/PoolAddress.sol\":{\"keccak256\":\"0xd8fca2727cc0b80b46f9bef41aa958c46c075dc785bc3ad3cda3b822e31a7354\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://54877e50ab00753f73eed0a4a9f2ff735401c07e78a76603738a6b9879eb39ae\",\"dweb:/ipfs/QmXuiT99xKNdZVTZ2gQkAxa6rSVKohSxYUU9BtYB5RXX5D\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/TestCallbackValidation.sol\":{\"keccak256\":\"0x8fc26f0462d24e03c481576501aa2579c5ec8c466b0d10902f1536c4b99d173a\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://967812777f93ce08dca792a5fd43cdf69b6c077abdb24d4159c618bb7387cffa\",\"dweb:/ipfs/QmSBJ1vmH7zJ9GbcJShWpVktWCVA5TrLy78LgqRr1Wk9hK\"]},\"@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol\":{\"keccak256\":\"0xfe6113d518466cd6652c85b111e01f33eb62157f49ae5ed7d5a3947a2044adb1\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://1c42b9e6f5902ac38dd43e25750939baa7e0c1425dc75afd717c4412731065d5\",\"dweb:/ipfs/QmWaoacnzsucTvBME2o7YgZBZMhaHv7fkj83htHMVWJKWh\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol\":{\"keccak256\":\"0x9453dd0e7442188667d01d9b65de3f1e14e9511ff3e303179a15f6fc267f7634\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://982f4328f956c3e60e67501e759eb292ac487f76460c774c50e9ae4fcc92aae5\",\"dweb:/ipfs/QmRnzEDsaqtd9PJEVcgQi7p5aV5pMSvRUoGZJAdwFUJxgZ\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol\":{\"keccak256\":\"0xe603ac5b17ecdee73ba2b27efdf386c257a19c14206e87eee77e2017b742d9e5\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://8febc9bdb399a4d94bb89f5377732652e2400e4a8dee808201ade6848f9004e7\",\"dweb:/ipfs/QmaKDqYYFU4d2W2iN77aDHptfbFmYZRrMYXHeGpJmM8C1c\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol\":{\"keccak256\":\"0x8071514d0fe5d17d6fbd31c191cdfb703031c24e0ece3621d88ab10e871375cd\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://d0b571930cc7488b1d546a7e9cea7c52d8b3c4e207da657ed0e0db7343b8cd03\",\"dweb:/ipfs/QmaGK6vVwB95QSTR1XMYvrh7ivYAYZxi3fD7v6VMA4jZ39\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol\":{\"keccak256\":\"0xf6e5d2cd1139c4c276bdbc8e1d2b256e456c866a91f1b868da265c6d2685c3f7\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b99c8c9ae8e27ee6559e5866bea82cbc9ffc8247f8d15b7422a4deb287d4d047\",\"dweb:/ipfs/QmfL8gaqt3ffAnm6nVj5ksuNpLygXuL3xq5VBqrkwC2JJ3\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol\":{\"keccak256\":\"0x759b78a2918af9e99e246dc3af084f654e48ef32bb4e4cb8a966aa3dcaece235\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://64144fb96e1c7fdba87305acadb98a198d26a3d46c097cb3a666e567f6f29735\",\"dweb:/ipfs/QmUnWVwN9FKB9uV5Pr8YfLpWZnYM2DENnRMaadZ492JS9u\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol\":{\"keccak256\":\"0x852dc1f5df7dcf7f11e7bb3eed79f0cea72ad4b25f6a9d2c35aafb48925fd49f\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://ed63907c38ff36b0e22bc9ffc53e791ea74f0d4f0e7c257fdfb5aaf8825b1f0f\",\"dweb:/ipfs/QmSQrckghEjs6HVsA5GVgpNpZWvTXMY5eQLF7cN6deFeEg\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610274806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80638bdb192514610030575b600080fd5b6100726004803603608081101561004657600080fd5b5080356001600160a01b03908116916020810135821691604082013516906060013562ffffff1661008e565b604080516001600160a01b039092168252519081900360200190f35b600061009c858585856100a5565b95945050505050565b600061009c856100b68686866100bb565b610111565b6100c361021e565b826001600160a01b0316846001600160a01b031611156100e1579192915b50604080516060810182526001600160a01b03948516815292909316602083015262ffffff169181019190915290565b600061011d838361013a565b9050336001600160a01b0382161461013457600080fd5b92915050565b600081602001516001600160a01b031682600001516001600160a01b03161061016257600080fd5b50805160208083015160409384015184516001600160a01b0394851681850152939091168385015262ffffff166060808401919091528351808403820181526080840185528051908301206001600160f81b031960a085015294901b6bffffffffffffffffffffffff191660a183015260b58201939093527fe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b5460d5808301919091528251808303909101815260f5909101909152805191012090565b60408051606081018252600080825260208201819052918101919091529056fea26469706673582212200b2ac4480ccf35ea7eb5b66f18aaf7e8ba4700e4635bcb104dc1909332b2ace664736f6c63430007060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80638bdb192514610030575b600080fd5b6100726004803603608081101561004657600080fd5b5080356001600160a01b03908116916020810135821691604082013516906060013562ffffff1661008e565b604080516001600160a01b039092168252519081900360200190f35b600061009c858585856100a5565b95945050505050565b600061009c856100b68686866100bb565b610111565b6100c361021e565b826001600160a01b0316846001600160a01b031611156100e1579192915b50604080516060810182526001600160a01b03948516815292909316602083015262ffffff169181019190915290565b600061011d838361013a565b9050336001600160a01b0382161461013457600080fd5b92915050565b600081602001516001600160a01b031682600001516001600160a01b03161061016257600080fd5b50805160208083015160409384015184516001600160a01b0394851681850152939091168385015262ffffff166060808401919091528351808403820181526080840185528051908301206001600160f81b031960a085015294901b6bffffffffffffffffffffffff191660a183015260b58201939093527fe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b5460d5808301919091528251808303909101815260f5909101909152805191012090565b60408051606081018252600080825260208201819052918101919091529056fea26469706673582212200b2ac4480ccf35ea7eb5b66f18aaf7e8ba4700e4635bcb104dc1909332b2ace664736f6c63430007060033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "116:303:64:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "116:303:64:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;155:261;;;;;;;;;;;;;;;;-1:-1:-1;155:261:64;;-1:-1:-1;;;;;155:261:64;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;-1:-1:-1;;;;;155:261:64;;;;;;;;;;;;;;;306:19;345:63;379:7;388:6;396;404:3;345:33;:63::i;:::-;338:70;155:261;-1:-1:-1;;;;;155:261:64:o;697:266:38:-;848:19;887:68;902:7;911:43;934:6;942;950:3;911:22;:43::i;:::-;887:14;:68::i;803:281:46:-;924:14;;:::i;:::-;964:6;-1:-1:-1;;;;;955:15:46;:6;-1:-1:-1;;;;;955:15:46;;951:56;;;992:6;;1000;951:56;-1:-1:-1;1025:51:46;;;;;;;;-1:-1:-1;;;;;1025:51:46;;;;;;;;;;;;;;;;;;;;;;;803:281::o;1216:286:38:-;1343:19;1402:44;1429:7;1438;1402:26;:44::i;:::-;1380:67;-1:-1:-1;1466:10:38;-1:-1:-1;;;;;1466:27:38;;;1458:36;;;;;;1216:286;;;;:::o;1337:526:46:-;1421:12;1467:3;:10;;;-1:-1:-1;;;;;1454:23:46;:3;:10;;;-1:-1:-1;;;;;1454:23:46;;1446:32;;;;;;-1:-1:-1;1708:10:46;;1720;;;;;1732:7;;;;;1697:43;;-1:-1:-1;;;;;1697:43:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1687:54;;;;;;-1:-1:-1;;;;;;1576:234:46;;;;;;;-1:-1:-1;;1576:234:46;;;;;;;;;;;;246:66;1576:234;;;;;;;;;;;;;;;;;;;;;;;;;1544:285;;;;;;1337:526::o;-1:-1:-1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: UNLICENSED\r\npragma solidity =0.7.6;\r\n\r\nimport '../libraries/CallbackValidation.sol';\r\n\r\ncontract TestCallbackValidation {\r\n    function verifyCallback(\r\n        address factory,\r\n        address tokenA,\r\n        address tokenB,\r\n        uint24 fee\r\n    ) external view returns (IUniswapV3Pool pool) {\r\n        return CallbackValidation.verifyCallback(factory, tokenA, tokenB, fee);\r\n    }\r\n}\r\n",
+  "sourcePath": "D:/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/TestCallbackValidation.sol",
+  "ast": {
+    "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/TestCallbackValidation.sol",
+    "exportedSymbols": {
+      "CallbackValidation": [
+        6158
+      ],
+      "IUniswapV3Pool": [
+        16970
+      ],
+      "IUniswapV3PoolActions": [
+        17094
+      ],
+      "IUniswapV3PoolDerivedState": [
+        17125
+      ],
+      "IUniswapV3PoolEvents": [
+        17244
+      ],
+      "IUniswapV3PoolImmutables": [
+        17284
+      ],
+      "IUniswapV3PoolOwnerActions": [
+        17310
+      ],
+      "IUniswapV3PoolState": [
+        17418
+      ],
+      "PoolAddress": [
+        9708
+      ],
+      "TestCallbackValidation": [
+        11418
+      ]
+    },
+    "id": 11419,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11394,
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:23:64"
+      },
+      {
+        "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/CallbackValidation.sol",
+        "file": "../libraries/CallbackValidation.sol",
+        "id": 11395,
+        "nodeType": "ImportDirective",
+        "scope": 11419,
+        "sourceUnit": 6159,
+        "src": "67:45:64",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 11418,
+        "linearizedBaseContracts": [
+          11418
+        ],
+        "name": "TestCallbackValidation",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 11416,
+              "nodeType": "Block",
+              "src": "327:89:64",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 11410,
+                        "name": "factory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11397,
+                        "src": "379:7:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 11411,
+                        "name": "tokenA",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11399,
+                        "src": "388:6:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 11412,
+                        "name": "tokenB",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11401,
+                        "src": "396:6:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 11413,
+                        "name": "fee",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11403,
+                        "src": "404:3:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint24",
+                          "typeString": "uint24"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint24",
+                          "typeString": "uint24"
+                        }
+                      ],
+                      "expression": {
+                        "id": 11408,
+                        "name": "CallbackValidation",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6158,
+                        "src": "345:18:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_CallbackValidation_$6158_$",
+                          "typeString": "type(library CallbackValidation)"
+                        }
+                      },
+                      "id": 11409,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "verifyCallback",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6126,
+                      "src": "345:33:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_address_$_t_address_$_t_address_$_t_uint24_$returns$_t_contract$_IUniswapV3Pool_$16970_$",
+                        "typeString": "function (address,address,address,uint24) view returns (contract IUniswapV3Pool)"
+                      }
+                    },
+                    "id": 11414,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "345:63:64",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IUniswapV3Pool_$16970",
+                      "typeString": "contract IUniswapV3Pool"
+                    }
+                  },
+                  "functionReturnParameters": 11407,
+                  "id": 11415,
+                  "nodeType": "Return",
+                  "src": "338:70:64"
+                }
+              ]
+            },
+            "functionSelector": "8bdb1925",
+            "id": 11417,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "verifyCallback",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11404,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11397,
+                  "mutability": "mutable",
+                  "name": "factory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11417,
+                  "src": "189:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11396,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "189:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11399,
+                  "mutability": "mutable",
+                  "name": "tokenA",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11417,
+                  "src": "215:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11398,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "215:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11401,
+                  "mutability": "mutable",
+                  "name": "tokenB",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11417,
+                  "src": "240:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11400,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "240:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11403,
+                  "mutability": "mutable",
+                  "name": "fee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11417,
+                  "src": "265:10:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 11402,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "265:6:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "178:104:64"
+            },
+            "returnParameters": {
+              "id": 11407,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11406,
+                  "mutability": "mutable",
+                  "name": "pool",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11417,
+                  "src": "306:19:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IUniswapV3Pool_$16970",
+                    "typeString": "contract IUniswapV3Pool"
+                  },
+                  "typeName": {
+                    "id": 11405,
+                    "name": "IUniswapV3Pool",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 16970,
+                    "src": "306:14:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IUniswapV3Pool_$16970",
+                      "typeString": "contract IUniswapV3Pool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "305:21:64"
+            },
+            "scope": 11418,
+            "src": "155:261:64",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11419,
+        "src": "116:303:64"
+      }
+    ],
+    "src": "40:381:64"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/test/TestCallbackValidation.sol",
+      "exportedSymbols": {
+        "CallbackValidation": [
+          6158
+        ],
+        "IUniswapV3Pool": [
+          16970
+        ],
+        "IUniswapV3PoolActions": [
+          17094
+        ],
+        "IUniswapV3PoolDerivedState": [
+          17125
+        ],
+        "IUniswapV3PoolEvents": [
+          17244
+        ],
+        "IUniswapV3PoolImmutables": [
+          17284
+        ],
+        "IUniswapV3PoolOwnerActions": [
+          17310
+        ],
+        "IUniswapV3PoolState": [
+          17418
+        ],
+        "PoolAddress": [
+          9708
+        ],
+        "TestCallbackValidation": [
+          11418
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "=",
+            "0.7",
+            ".6"
+          ]
+        },
+        "id": 11394,
+        "name": "PragmaDirective",
+        "src": "40:23:64"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 6159,
+          "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/libraries/CallbackValidation.sol",
+          "file": "../libraries/CallbackValidation.sol",
+          "scope": 11419,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 11395,
+        "name": "ImportDirective",
+        "src": "67:45:64"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            11418
+          ],
+          "name": "TestCallbackValidation",
+          "scope": 11419
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "8bdb1925",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "verifyCallback",
+              "scope": 11418,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "factory",
+                      "scope": 11417,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 11396,
+                        "name": "ElementaryTypeName",
+                        "src": "189:7:64"
+                      }
+                    ],
+                    "id": 11397,
+                    "name": "VariableDeclaration",
+                    "src": "189:15:64"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "tokenA",
+                      "scope": 11417,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 11398,
+                        "name": "ElementaryTypeName",
+                        "src": "215:7:64"
+                      }
+                    ],
+                    "id": 11399,
+                    "name": "VariableDeclaration",
+                    "src": "215:14:64"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "tokenB",
+                      "scope": 11417,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 11400,
+                        "name": "ElementaryTypeName",
+                        "src": "240:7:64"
+                      }
+                    ],
+                    "id": 11401,
+                    "name": "VariableDeclaration",
+                    "src": "240:14:64"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "fee",
+                      "scope": 11417,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint24",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint24",
+                          "type": "uint24"
+                        },
+                        "id": 11402,
+                        "name": "ElementaryTypeName",
+                        "src": "265:6:64"
+                      }
+                    ],
+                    "id": 11403,
+                    "name": "VariableDeclaration",
+                    "src": "265:10:64"
+                  }
+                ],
+                "id": 11404,
+                "name": "ParameterList",
+                "src": "178:104:64"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "pool",
+                      "scope": 11417,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IUniswapV3Pool",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "IUniswapV3Pool",
+                          "referencedDeclaration": 16970,
+                          "type": "contract IUniswapV3Pool"
+                        },
+                        "id": 11405,
+                        "name": "UserDefinedTypeName",
+                        "src": "306:14:64"
+                      }
+                    ],
+                    "id": 11406,
+                    "name": "VariableDeclaration",
+                    "src": "306:19:64"
+                  }
+                ],
+                "id": 11407,
+                "name": "ParameterList",
+                "src": "305:21:64"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 11407
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "contract IUniswapV3Pool",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint24",
+                                  "typeString": "uint24"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "verifyCallback",
+                              "referencedDeclaration": 6126,
+                              "type": "function (address,address,address,uint24) view returns (contract IUniswapV3Pool)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 6158,
+                                  "type": "type(library CallbackValidation)",
+                                  "value": "CallbackValidation"
+                                },
+                                "id": 11408,
+                                "name": "Identifier",
+                                "src": "345:18:64"
+                              }
+                            ],
+                            "id": 11409,
+                            "name": "MemberAccess",
+                            "src": "345:33:64"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11397,
+                              "type": "address",
+                              "value": "factory"
+                            },
+                            "id": 11410,
+                            "name": "Identifier",
+                            "src": "379:7:64"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11399,
+                              "type": "address",
+                              "value": "tokenA"
+                            },
+                            "id": 11411,
+                            "name": "Identifier",
+                            "src": "388:6:64"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11401,
+                              "type": "address",
+                              "value": "tokenB"
+                            },
+                            "id": 11412,
+                            "name": "Identifier",
+                            "src": "396:6:64"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11403,
+                              "type": "uint24",
+                              "value": "fee"
+                            },
+                            "id": 11413,
+                            "name": "Identifier",
+                            "src": "404:3:64"
+                          }
+                        ],
+                        "id": 11414,
+                        "name": "FunctionCall",
+                        "src": "345:63:64"
+                      }
+                    ],
+                    "id": 11415,
+                    "name": "Return",
+                    "src": "338:70:64"
+                  }
+                ],
+                "id": 11416,
+                "name": "Block",
+                "src": "327:89:64"
+              }
+            ],
+            "id": 11417,
+            "name": "FunctionDefinition",
+            "src": "155:261:64"
+          }
+        ],
+        "id": 11418,
+        "name": "ContractDefinition",
+        "src": "116:303:64"
+      }
+    ],
+    "id": 11419,
+    "name": "SourceUnit",
+    "src": "40:381:64"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-16T07:48:26.636Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

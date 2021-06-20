@@ -1,0 +1,2747 @@
+{
+  "contractName": "PoolInitializer",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "WETH9",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "factory",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token0",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token1",
+          "type": "address"
+        },
+        {
+          "internalType": "uint24",
+          "name": "fee",
+          "type": "uint24"
+        },
+        {
+          "internalType": "uint160",
+          "name": "sqrtPriceX96",
+          "type": "uint160"
+        }
+      ],
+      "name": "createAndInitializePoolIfNecessary",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "pool",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"WETH9\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"uint160\",\"name\":\"sqrtPriceX96\",\"type\":\"uint160\"}],\"name\":\"createAndInitializePoolIfNecessary\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"pool\",\"type\":\"address\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"factory\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"createAndInitializePoolIfNecessary(address,address,uint24,uint160)\":{\"details\":\"This method can be bundled with others via IMulticall for the first action (e.g. mint) performed against a pool\",\"params\":{\"fee\":\"The fee amount of the v3 pool for the specified token pair\",\"sqrtPriceX96\":\"The initial square root price of the pool as a Q64.96 value\",\"token0\":\"The contract address of token0 of the pool\",\"token1\":\"The contract address of token1 of the pool\"},\"returns\":{\"pool\":\"Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary\"}}},\"title\":\"Creates and initializes V3 Pools\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"createAndInitializePoolIfNecessary(address,address,uint24,uint160)\":{\"notice\":\"Creates a new pool if it does not exist, then initializes if not initialized\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PoolInitializer.sol\":\"PoolInitializer\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PeripheryImmutableState.sol\":{\"keccak256\":\"0x1d0175136fda60c5e1b6aab6dfa4a35856717413d754d0750eb75866f3f5e43f\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://8e19496cd2a7239e9e869bafbfb9f762691a9ab52f169b579f11d752d7df79a5\",\"dweb:/ipfs/QmTaLVPUVMGp4ZywHwpFupnz2873NPyqYs3EzbJTHpVNSA\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PoolInitializer.sol\":{\"keccak256\":\"0x1141fd6d820b534347ad90e0f027d1dd3378066cbaf78330d8d0072ed9aeefcc\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://67dbbcb74c0c1b8761b2656f35bd7f8b0bad3311cfe5e6fbe6ba92f60d77821a\",\"dweb:/ipfs/QmRPhL3KAzhphnba2gRBryPCn5Zth3CoA6pPqHANcw8N6G\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IPeripheryImmutableState.sol\":{\"keccak256\":\"0x23bb9671c6188fe826d384acb88182efc75c55ee7b6e7c5792de8f26581f0390\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://eb0b086015acc6d97e15e71a406e5ba393d188df878c71eaeb98b6ce4c99a353\",\"dweb:/ipfs/QmWvXDAjebKmEJcvoB7S7e981zcvLvMLT11BLZZMf7D2rL\"]},\"/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IPoolInitializer.sol\":{\"keccak256\":\"0x8229e43304f2c2412aaca27ea314ee78f3bcaca31124017b3bc4729c383594f1\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://3beed69fd04dd1ad59e9c083914ca47fd1f3c0bf53e50a62c772597a25191d78\",\"dweb:/ipfs/QmZ7vuCn86Gg6kopXVw5hBRPemcqtWykke8zUskZArq8aP\"]},\"@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol\":{\"keccak256\":\"0xcc3d0c93fc9ac0febbe09f941b465b57f750bcf3b48432da0b97dc289cfdc489\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b9379ad954680c44a0bc523b314ae4c4da735f9fe1d02aa56ea5bdba6f1136f2\",\"dweb:/ipfs/QmZXdgQNXKAckrXWz9R3mc47F1fvDvr28a2ewJrwNAw71B\"]},\"@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol\":{\"keccak256\":\"0xfe6113d518466cd6652c85b111e01f33eb62157f49ae5ed7d5a3947a2044adb1\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://1c42b9e6f5902ac38dd43e25750939baa7e0c1425dc75afd717c4412731065d5\",\"dweb:/ipfs/QmWaoacnzsucTvBME2o7YgZBZMhaHv7fkj83htHMVWJKWh\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol\":{\"keccak256\":\"0x9453dd0e7442188667d01d9b65de3f1e14e9511ff3e303179a15f6fc267f7634\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://982f4328f956c3e60e67501e759eb292ac487f76460c774c50e9ae4fcc92aae5\",\"dweb:/ipfs/QmRnzEDsaqtd9PJEVcgQi7p5aV5pMSvRUoGZJAdwFUJxgZ\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol\":{\"keccak256\":\"0xe603ac5b17ecdee73ba2b27efdf386c257a19c14206e87eee77e2017b742d9e5\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://8febc9bdb399a4d94bb89f5377732652e2400e4a8dee808201ade6848f9004e7\",\"dweb:/ipfs/QmaKDqYYFU4d2W2iN77aDHptfbFmYZRrMYXHeGpJmM8C1c\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol\":{\"keccak256\":\"0x8071514d0fe5d17d6fbd31c191cdfb703031c24e0ece3621d88ab10e871375cd\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://d0b571930cc7488b1d546a7e9cea7c52d8b3c4e207da657ed0e0db7343b8cd03\",\"dweb:/ipfs/QmaGK6vVwB95QSTR1XMYvrh7ivYAYZxi3fD7v6VMA4jZ39\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol\":{\"keccak256\":\"0xf6e5d2cd1139c4c276bdbc8e1d2b256e456c866a91f1b868da265c6d2685c3f7\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b99c8c9ae8e27ee6559e5866bea82cbc9ffc8247f8d15b7422a4deb287d4d047\",\"dweb:/ipfs/QmfL8gaqt3ffAnm6nVj5ksuNpLygXuL3xq5VBqrkwC2JJ3\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol\":{\"keccak256\":\"0x759b78a2918af9e99e246dc3af084f654e48ef32bb4e4cb8a966aa3dcaece235\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://64144fb96e1c7fdba87305acadb98a198d26a3d46c097cb3a666e567f6f29735\",\"dweb:/ipfs/QmUnWVwN9FKB9uV5Pr8YfLpWZnYM2DENnRMaadZ492JS9u\"]},\"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol\":{\"keccak256\":\"0x852dc1f5df7dcf7f11e7bb3eed79f0cea72ad4b25f6a9d2c35aafb48925fd49f\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://ed63907c38ff36b0e22bc9ffc53e791ea74f0d4f0e7c257fdfb5aaf8825b1f0f\",\"dweb:/ipfs/QmSQrckghEjs6HVsA5GVgpNpZWvTXMY5eQLF7cN6deFeEg\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL-2.0-or-later\r\npragma solidity =0.7.6;\r\n\r\nimport '@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol';\r\nimport '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';\r\n\r\nimport './PeripheryImmutableState.sol';\r\nimport '../interfaces/IPoolInitializer.sol';\r\n\r\n/// @title Creates and initializes V3 Pools\r\nabstract contract PoolInitializer is IPoolInitializer, PeripheryImmutableState {\r\n    /// @inheritdoc IPoolInitializer\r\n    function createAndInitializePoolIfNecessary(\r\n        address token0,\r\n        address token1,\r\n        uint24 fee,\r\n        uint160 sqrtPriceX96\r\n    ) external payable override returns (address pool) {\r\n        require(token0 < token1);\r\n        pool = IUniswapV3Factory(factory).getPool(token0, token1, fee);\r\n\r\n        if (pool == address(0)) {\r\n            pool = IUniswapV3Factory(factory).createPool(token0, token1, fee);\r\n            IUniswapV3Pool(pool).initialize(sqrtPriceX96);\r\n        } else {\r\n            (uint160 sqrtPriceX96Existing, , , , , , ) = IUniswapV3Pool(pool).slot0();\r\n            if (sqrtPriceX96Existing == 0) {\r\n                IUniswapV3Pool(pool).initialize(sqrtPriceX96);\r\n            }\r\n        }\r\n    }\r\n}\r\n",
+  "sourcePath": "D:/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PoolInitializer.sol",
+  "ast": {
+    "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PoolInitializer.sol",
+    "exportedSymbols": {
+      "IPeripheryImmutableState": [
+        1525
+      ],
+      "IPoolInitializer": [
+        1603
+      ],
+      "IUniswapV3Factory": [
+        8997
+      ],
+      "IUniswapV3Pool": [
+        9019
+      ],
+      "IUniswapV3PoolActions": [
+        9143
+      ],
+      "IUniswapV3PoolDerivedState": [
+        9174
+      ],
+      "IUniswapV3PoolEvents": [
+        9293
+      ],
+      "IUniswapV3PoolImmutables": [
+        9333
+      ],
+      "IUniswapV3PoolOwnerActions": [
+        9359
+      ],
+      "IUniswapV3PoolState": [
+        9467
+      ],
+      "PeripheryImmutableState": [
+        554
+      ],
+      "PoolInitializer": [
+        1057
+      ]
+    },
+    "id": 1058,
+    "license": "GPL-2.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 967,
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "46:23:8"
+      },
+      {
+        "absolutePath": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+        "file": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+        "id": 968,
+        "nodeType": "ImportDirective",
+        "scope": 1058,
+        "sourceUnit": 8998,
+        "src": "73:69:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+        "file": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+        "id": 969,
+        "nodeType": "ImportDirective",
+        "scope": 1058,
+        "sourceUnit": 9020,
+        "src": "144:66:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PeripheryImmutableState.sol",
+        "file": "./PeripheryImmutableState.sol",
+        "id": 970,
+        "nodeType": "ImportDirective",
+        "scope": 1058,
+        "sourceUnit": 555,
+        "src": "214:39:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IPoolInitializer.sol",
+        "file": "../interfaces/IPoolInitializer.sol",
+        "id": 971,
+        "nodeType": "ImportDirective",
+        "scope": 1058,
+        "sourceUnit": 1604,
+        "src": "255:44:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 973,
+              "name": "IPoolInitializer",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1603,
+              "src": "385:16:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IPoolInitializer_$1603",
+                "typeString": "contract IPoolInitializer"
+              }
+            },
+            "id": 974,
+            "nodeType": "InheritanceSpecifier",
+            "src": "385:16:8"
+          },
+          {
+            "baseName": {
+              "id": 975,
+              "name": "PeripheryImmutableState",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 554,
+              "src": "403:23:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PeripheryImmutableState_$554",
+                "typeString": "contract PeripheryImmutableState"
+              }
+            },
+            "id": 976,
+            "nodeType": "InheritanceSpecifier",
+            "src": "403:23:8"
+          }
+        ],
+        "contractDependencies": [
+          554,
+          1525,
+          1603
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 972,
+          "nodeType": "StructuredDocumentation",
+          "src": "303:45:8",
+          "text": "@title Creates and initializes V3 Pools"
+        },
+        "fullyImplemented": false,
+        "id": 1057,
+        "linearizedBaseContracts": [
+          1057,
+          554,
+          1525,
+          1603
+        ],
+        "name": "PoolInitializer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "baseFunctions": [
+              1602
+            ],
+            "body": {
+              "id": 1055,
+              "nodeType": "Block",
+              "src": "674:535:8",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 994,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 992,
+                          "name": "token0",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 979,
+                          "src": "693:6:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "<",
+                        "rightExpression": {
+                          "id": 993,
+                          "name": "token1",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 981,
+                          "src": "702:6:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "693:15:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 991,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "685:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 995,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "685:24:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 996,
+                  "nodeType": "ExpressionStatement",
+                  "src": "685:24:8"
+                },
+                {
+                  "expression": {
+                    "id": 1006,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 997,
+                      "name": "pool",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 989,
+                      "src": "720:4:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 1002,
+                          "name": "token0",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 979,
+                          "src": "762:6:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "id": 1003,
+                          "name": "token1",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 981,
+                          "src": "770:6:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "id": 1004,
+                          "name": "fee",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 983,
+                          "src": "778:3:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint24",
+                            "typeString": "uint24"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_uint24",
+                            "typeString": "uint24"
+                          }
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "id": 999,
+                              "name": "factory",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 533,
+                              "src": "745:7:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "id": 998,
+                            "name": "IUniswapV3Factory",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 8997,
+                            "src": "727:17:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_IUniswapV3Factory_$8997_$",
+                              "typeString": "type(contract IUniswapV3Factory)"
+                            }
+                          },
+                          "id": 1000,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "727:26:8",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IUniswapV3Factory_$8997",
+                            "typeString": "contract IUniswapV3Factory"
+                          }
+                        },
+                        "id": 1001,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "getPool",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 8970,
+                        "src": "727:34:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_view$_t_address_$_t_address_$_t_uint24_$returns$_t_address_$",
+                          "typeString": "function (address,address,uint24) view external returns (address)"
+                        }
+                      },
+                      "id": 1005,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "727:55:8",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "720:62:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 1007,
+                  "nodeType": "ExpressionStatement",
+                  "src": "720:62:8"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 1013,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 1008,
+                      "name": "pool",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 989,
+                      "src": "799:4:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "arguments": [
+                        {
+                          "hexValue": "30",
+                          "id": 1011,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "815:1:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          }
+                        ],
+                        "id": 1010,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "807:7:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 1009,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "807:7:8",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 1012,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "807:10:8",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "799:18:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 1053,
+                    "nodeType": "Block",
+                    "src": "977:225:8",
+                    "statements": [
+                      {
+                        "assignments": [
+                          1034,
+                          null,
+                          null,
+                          null,
+                          null,
+                          null,
+                          null
+                        ],
+                        "declarations": [
+                          {
+                            "constant": false,
+                            "id": 1034,
+                            "mutability": "mutable",
+                            "name": "sqrtPriceX96Existing",
+                            "nodeType": "VariableDeclaration",
+                            "scope": 1053,
+                            "src": "993:28:8",
+                            "stateVariable": false,
+                            "storageLocation": "default",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            },
+                            "typeName": {
+                              "id": 1033,
+                              "name": "uint160",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "993:7:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint160",
+                                "typeString": "uint160"
+                              }
+                            },
+                            "visibility": "internal"
+                          },
+                          null,
+                          null,
+                          null,
+                          null,
+                          null,
+                          null
+                        ],
+                        "id": 1040,
+                        "initialValue": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "id": 1036,
+                                  "name": "pool",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 989,
+                                  "src": "1052:4:8",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                ],
+                                "id": 1035,
+                                "name": "IUniswapV3Pool",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 9019,
+                                "src": "1037:14:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_IUniswapV3Pool_$9019_$",
+                                  "typeString": "type(contract IUniswapV3Pool)"
+                                }
+                              },
+                              "id": 1037,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "1037:20:8",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IUniswapV3Pool_$9019",
+                                "typeString": "contract IUniswapV3Pool"
+                              }
+                            },
+                            "id": 1038,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "slot0",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 9380,
+                            "src": "1037:26:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$__$returns$_t_uint160_$_t_int24_$_t_uint16_$_t_uint16_$_t_uint16_$_t_uint8_$_t_bool_$",
+                              "typeString": "function () view external returns (uint160,int24,uint16,uint16,uint16,uint8,bool)"
+                            }
+                          },
+                          "id": 1039,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1037:28:8",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$_t_uint160_$_t_int24_$_t_uint16_$_t_uint16_$_t_uint16_$_t_uint8_$_t_bool_$",
+                            "typeString": "tuple(uint160,int24,uint16,uint16,uint16,uint8,bool)"
+                          }
+                        },
+                        "nodeType": "VariableDeclarationStatement",
+                        "src": "992:73:8"
+                      },
+                      {
+                        "condition": {
+                          "commonType": {
+                            "typeIdentifier": "t_uint160",
+                            "typeString": "uint160"
+                          },
+                          "id": 1043,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "id": 1041,
+                            "name": "sqrtPriceX96Existing",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1034,
+                            "src": "1084:20:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "==",
+                          "rightExpression": {
+                            "hexValue": "30",
+                            "id": 1042,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1108:1:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                          },
+                          "src": "1084:25:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 1052,
+                        "nodeType": "IfStatement",
+                        "src": "1080:111:8",
+                        "trueBody": {
+                          "id": 1051,
+                          "nodeType": "Block",
+                          "src": "1111:80:8",
+                          "statements": [
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "id": 1048,
+                                    "name": "sqrtPriceX96",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 985,
+                                    "src": "1162:12:8",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint160",
+                                      "typeString": "uint160"
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint160",
+                                      "typeString": "uint160"
+                                    }
+                                  ],
+                                  "expression": {
+                                    "arguments": [
+                                      {
+                                        "id": 1045,
+                                        "name": "pool",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 989,
+                                        "src": "1145:4:8",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        }
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        }
+                                      ],
+                                      "id": 1044,
+                                      "name": "IUniswapV3Pool",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 9019,
+                                      "src": "1130:14:8",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_type$_t_contract$_IUniswapV3Pool_$9019_$",
+                                        "typeString": "type(contract IUniswapV3Pool)"
+                                      }
+                                    },
+                                    "id": 1046,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "kind": "typeConversion",
+                                    "lValueRequested": false,
+                                    "names": [],
+                                    "nodeType": "FunctionCall",
+                                    "src": "1130:20:8",
+                                    "tryCall": false,
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_contract$_IUniswapV3Pool_$9019",
+                                      "typeString": "contract IUniswapV3Pool"
+                                    }
+                                  },
+                                  "id": 1047,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "initialize",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 9056,
+                                  "src": "1130:31:8",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_external_nonpayable$_t_uint160_$returns$__$",
+                                    "typeString": "function (uint160) external"
+                                  }
+                                },
+                                "id": 1049,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1130:45:8",
+                                "tryCall": false,
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_tuple$__$",
+                                  "typeString": "tuple()"
+                                }
+                              },
+                              "id": 1050,
+                              "nodeType": "ExpressionStatement",
+                              "src": "1130:45:8"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "id": 1054,
+                  "nodeType": "IfStatement",
+                  "src": "795:407:8",
+                  "trueBody": {
+                    "id": 1032,
+                    "nodeType": "Block",
+                    "src": "819:152:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 1023,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 1014,
+                            "name": "pool",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 989,
+                            "src": "834:4:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "arguments": [
+                              {
+                                "id": 1019,
+                                "name": "token0",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 979,
+                                "src": "879:6:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              },
+                              {
+                                "id": 1020,
+                                "name": "token1",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 981,
+                                "src": "887:6:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              },
+                              {
+                                "id": 1021,
+                                "name": "fee",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 983,
+                                "src": "895:3:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint24",
+                                  "typeString": "uint24"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint24",
+                                  "typeString": "uint24"
+                                }
+                              ],
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "id": 1016,
+                                    "name": "factory",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 533,
+                                    "src": "859:7:8",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    }
+                                  ],
+                                  "id": 1015,
+                                  "name": "IUniswapV3Factory",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 8997,
+                                  "src": "841:17:8",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_contract$_IUniswapV3Factory_$8997_$",
+                                    "typeString": "type(contract IUniswapV3Factory)"
+                                  }
+                                },
+                                "id": 1017,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "typeConversion",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "841:26:8",
+                                "tryCall": false,
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_IUniswapV3Factory_$8997",
+                                  "typeString": "contract IUniswapV3Factory"
+                                }
+                              },
+                              "id": 1018,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "createPool",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 8982,
+                              "src": "841:37:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint24_$returns$_t_address_$",
+                                "typeString": "function (address,address,uint24) external returns (address)"
+                              }
+                            },
+                            "id": 1022,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "841:58:8",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "src": "834:65:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "id": 1024,
+                        "nodeType": "ExpressionStatement",
+                        "src": "834:65:8"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "id": 1029,
+                              "name": "sqrtPriceX96",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 985,
+                              "src": "946:12:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint160",
+                                "typeString": "uint160"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint160",
+                                "typeString": "uint160"
+                              }
+                            ],
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "id": 1026,
+                                  "name": "pool",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 989,
+                                  "src": "929:4:8",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                ],
+                                "id": 1025,
+                                "name": "IUniswapV3Pool",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 9019,
+                                "src": "914:14:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_IUniswapV3Pool_$9019_$",
+                                  "typeString": "type(contract IUniswapV3Pool)"
+                                }
+                              },
+                              "id": 1027,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "914:20:8",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IUniswapV3Pool_$9019",
+                                "typeString": "contract IUniswapV3Pool"
+                              }
+                            },
+                            "id": 1028,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "initialize",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 9056,
+                            "src": "914:31:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_nonpayable$_t_uint160_$returns$__$",
+                              "typeString": "function (uint160) external"
+                            }
+                          },
+                          "id": 1030,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "914:45:8",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 1031,
+                        "nodeType": "ExpressionStatement",
+                        "src": "914:45:8"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": {
+              "id": 977,
+              "nodeType": "StructuredDocumentation",
+              "src": "434:32:8",
+              "text": "@inheritdoc IPoolInitializer"
+            },
+            "functionSelector": "13ead562",
+            "id": 1056,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createAndInitializePoolIfNecessary",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 987,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "642:8:8"
+            },
+            "parameters": {
+              "id": 986,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 979,
+                  "mutability": "mutable",
+                  "name": "token0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1056,
+                  "src": "526:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 978,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "526:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 981,
+                  "mutability": "mutable",
+                  "name": "token1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1056,
+                  "src": "551:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 980,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "551:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 983,
+                  "mutability": "mutable",
+                  "name": "fee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1056,
+                  "src": "576:10:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 982,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "576:6:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 985,
+                  "mutability": "mutable",
+                  "name": "sqrtPriceX96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1056,
+                  "src": "597:20:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint160",
+                    "typeString": "uint160"
+                  },
+                  "typeName": {
+                    "id": 984,
+                    "name": "uint160",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "597:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "515:109:8"
+            },
+            "returnParameters": {
+              "id": 990,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 989,
+                  "mutability": "mutable",
+                  "name": "pool",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1056,
+                  "src": "660:12:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 988,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "660:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "659:14:8"
+            },
+            "scope": 1057,
+            "src": "472:737:8",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1058,
+        "src": "348:864:8"
+      }
+    ],
+    "src": "46:1168:8"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PoolInitializer.sol",
+      "exportedSymbols": {
+        "IPeripheryImmutableState": [
+          1525
+        ],
+        "IPoolInitializer": [
+          1603
+        ],
+        "IUniswapV3Factory": [
+          8997
+        ],
+        "IUniswapV3Pool": [
+          9019
+        ],
+        "IUniswapV3PoolActions": [
+          9143
+        ],
+        "IUniswapV3PoolDerivedState": [
+          9174
+        ],
+        "IUniswapV3PoolEvents": [
+          9293
+        ],
+        "IUniswapV3PoolImmutables": [
+          9333
+        ],
+        "IUniswapV3PoolOwnerActions": [
+          9359
+        ],
+        "IUniswapV3PoolState": [
+          9467
+        ],
+        "PeripheryImmutableState": [
+          554
+        ],
+        "PoolInitializer": [
+          1057
+        ]
+      },
+      "license": "GPL-2.0-or-later"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "=",
+            "0.7",
+            ".6"
+          ]
+        },
+        "id": 967,
+        "name": "PragmaDirective",
+        "src": "46:23:8"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 8998,
+          "absolutePath": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+          "file": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+          "scope": 1058,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 968,
+        "name": "ImportDirective",
+        "src": "73:69:8"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 9020,
+          "absolutePath": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+          "file": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+          "scope": 1058,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 969,
+        "name": "ImportDirective",
+        "src": "144:66:8"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 555,
+          "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/base/PeripheryImmutableState.sol",
+          "file": "./PeripheryImmutableState.sol",
+          "scope": 1058,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 970,
+        "name": "ImportDirective",
+        "src": "214:39:8"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1604,
+          "absolutePath": "/D/Blockchain Projects/Uniswap V3 Fork/periphery/contracts/interfaces/IPoolInitializer.sol",
+          "file": "../interfaces/IPoolInitializer.sol",
+          "scope": 1058,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 971,
+        "name": "ImportDirective",
+        "src": "255:44:8"
+      },
+      {
+        "attributes": {
+          "abstract": true,
+          "contractDependencies": [
+            554,
+            1525,
+            1603
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1057,
+            554,
+            1525,
+            1603
+          ],
+          "name": "PoolInitializer",
+          "scope": 1058
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title Creates and initializes V3 Pools"
+            },
+            "id": 972,
+            "name": "StructuredDocumentation",
+            "src": "303:45:8"
+          },
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "IPoolInitializer",
+                  "referencedDeclaration": 1603,
+                  "type": "contract IPoolInitializer"
+                },
+                "id": 973,
+                "name": "UserDefinedTypeName",
+                "src": "385:16:8"
+              }
+            ],
+            "id": 974,
+            "name": "InheritanceSpecifier",
+            "src": "385:16:8"
+          },
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "PeripheryImmutableState",
+                  "referencedDeclaration": 554,
+                  "type": "contract PeripheryImmutableState"
+                },
+                "id": 975,
+                "name": "UserDefinedTypeName",
+                "src": "403:23:8"
+              }
+            ],
+            "id": 976,
+            "name": "InheritanceSpecifier",
+            "src": "403:23:8"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                1602
+              ],
+              "functionSelector": "13ead562",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "createAndInitializePoolIfNecessary",
+              "scope": 1057,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@inheritdoc IPoolInitializer"
+                },
+                "id": 977,
+                "name": "StructuredDocumentation",
+                "src": "434:32:8"
+              },
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 987,
+                "name": "OverrideSpecifier",
+                "src": "642:8:8"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "token0",
+                      "scope": 1056,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 978,
+                        "name": "ElementaryTypeName",
+                        "src": "526:7:8"
+                      }
+                    ],
+                    "id": 979,
+                    "name": "VariableDeclaration",
+                    "src": "526:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "token1",
+                      "scope": 1056,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 980,
+                        "name": "ElementaryTypeName",
+                        "src": "551:7:8"
+                      }
+                    ],
+                    "id": 981,
+                    "name": "VariableDeclaration",
+                    "src": "551:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "fee",
+                      "scope": 1056,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint24",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint24",
+                          "type": "uint24"
+                        },
+                        "id": 982,
+                        "name": "ElementaryTypeName",
+                        "src": "576:6:8"
+                      }
+                    ],
+                    "id": 983,
+                    "name": "VariableDeclaration",
+                    "src": "576:10:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "sqrtPriceX96",
+                      "scope": 1056,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint160",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint160",
+                          "type": "uint160"
+                        },
+                        "id": 984,
+                        "name": "ElementaryTypeName",
+                        "src": "597:7:8"
+                      }
+                    ],
+                    "id": 985,
+                    "name": "VariableDeclaration",
+                    "src": "597:20:8"
+                  }
+                ],
+                "id": 986,
+                "name": "ParameterList",
+                "src": "515:109:8"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "pool",
+                      "scope": 1056,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 988,
+                        "name": "ElementaryTypeName",
+                        "src": "660:7:8"
+                      }
+                    ],
+                    "id": 989,
+                    "name": "VariableDeclaration",
+                    "src": "660:12:8"
+                  }
+                ],
+                "id": 990,
+                "name": "ParameterList",
+                "src": "659:14:8"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                4294967278,
+                                4294967278
+                              ],
+                              "referencedDeclaration": 4294967278,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 991,
+                            "name": "Identifier",
+                            "src": "685:7:8"
+                          },
+                          {
+                            "attributes": {
+                              "commonType": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "<",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 979,
+                                  "type": "address",
+                                  "value": "token0"
+                                },
+                                "id": 992,
+                                "name": "Identifier",
+                                "src": "693:6:8"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 981,
+                                  "type": "address",
+                                  "value": "token1"
+                                },
+                                "id": 993,
+                                "name": "Identifier",
+                                "src": "702:6:8"
+                              }
+                            ],
+                            "id": 994,
+                            "name": "BinaryOperation",
+                            "src": "693:15:8"
+                          }
+                        ],
+                        "id": 995,
+                        "name": "FunctionCall",
+                        "src": "685:24:8"
+                      }
+                    ],
+                    "id": 996,
+                    "name": "ExpressionStatement",
+                    "src": "685:24:8"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 989,
+                              "type": "address",
+                              "value": "pool"
+                            },
+                            "id": 997,
+                            "name": "Identifier",
+                            "src": "720:4:8"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "address",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint24",
+                                      "typeString": "uint24"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "getPool",
+                                  "referencedDeclaration": 8970,
+                                  "type": "function (address,address,uint24) view external returns (address)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "isStructConstructorCall": false,
+                                      "lValueRequested": false,
+                                      "names": [
+                                        null
+                                      ],
+                                      "tryCall": false,
+                                      "type": "contract IUniswapV3Factory",
+                                      "type_conversion": true
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_address",
+                                              "typeString": "address"
+                                            }
+                                          ],
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 8997,
+                                          "type": "type(contract IUniswapV3Factory)",
+                                          "value": "IUniswapV3Factory"
+                                        },
+                                        "id": 998,
+                                        "name": "Identifier",
+                                        "src": "727:17:8"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 533,
+                                          "type": "address",
+                                          "value": "factory"
+                                        },
+                                        "id": 999,
+                                        "name": "Identifier",
+                                        "src": "745:7:8"
+                                      }
+                                    ],
+                                    "id": 1000,
+                                    "name": "FunctionCall",
+                                    "src": "727:26:8"
+                                  }
+                                ],
+                                "id": 1001,
+                                "name": "MemberAccess",
+                                "src": "727:34:8"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 979,
+                                  "type": "address",
+                                  "value": "token0"
+                                },
+                                "id": 1002,
+                                "name": "Identifier",
+                                "src": "762:6:8"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 981,
+                                  "type": "address",
+                                  "value": "token1"
+                                },
+                                "id": 1003,
+                                "name": "Identifier",
+                                "src": "770:6:8"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 983,
+                                  "type": "uint24",
+                                  "value": "fee"
+                                },
+                                "id": 1004,
+                                "name": "Identifier",
+                                "src": "778:3:8"
+                              }
+                            ],
+                            "id": 1005,
+                            "name": "FunctionCall",
+                            "src": "727:55:8"
+                          }
+                        ],
+                        "id": 1006,
+                        "name": "Assignment",
+                        "src": "720:62:8"
+                      }
+                    ],
+                    "id": 1007,
+                    "name": "ExpressionStatement",
+                    "src": "720:62:8"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "commonType": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 989,
+                              "type": "address",
+                              "value": "pool"
+                            },
+                            "id": 1008,
+                            "name": "Identifier",
+                            "src": "799:4:8"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "address payable",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_rational_0_by_1",
+                                      "typeString": "int_const 0"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "type": "type(address)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "name": "address"
+                                    },
+                                    "id": 1009,
+                                    "name": "ElementaryTypeName",
+                                    "src": "807:7:8"
+                                  }
+                                ],
+                                "id": 1010,
+                                "name": "ElementaryTypeNameExpression",
+                                "src": "807:7:8"
+                              },
+                              {
+                                "attributes": {
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 1011,
+                                "name": "Literal",
+                                "src": "815:1:8"
+                              }
+                            ],
+                            "id": 1012,
+                            "name": "FunctionCall",
+                            "src": "807:10:8"
+                          }
+                        ],
+                        "id": 1013,
+                        "name": "BinaryOperation",
+                        "src": "799:18:8"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "=",
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 989,
+                                      "type": "address",
+                                      "value": "pool"
+                                    },
+                                    "id": 1014,
+                                    "name": "Identifier",
+                                    "src": "834:4:8"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "isStructConstructorCall": false,
+                                      "lValueRequested": false,
+                                      "names": [
+                                        null
+                                      ],
+                                      "tryCall": false,
+                                      "type": "address",
+                                      "type_conversion": false
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_address",
+                                              "typeString": "address"
+                                            },
+                                            {
+                                              "typeIdentifier": "t_address",
+                                              "typeString": "address"
+                                            },
+                                            {
+                                              "typeIdentifier": "t_uint24",
+                                              "typeString": "uint24"
+                                            }
+                                          ],
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "member_name": "createPool",
+                                          "referencedDeclaration": 8982,
+                                          "type": "function (address,address,uint24) external returns (address)"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "isConstant": false,
+                                              "isLValue": false,
+                                              "isPure": false,
+                                              "isStructConstructorCall": false,
+                                              "lValueRequested": false,
+                                              "names": [
+                                                null
+                                              ],
+                                              "tryCall": false,
+                                              "type": "contract IUniswapV3Factory",
+                                              "type_conversion": true
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "argumentTypes": [
+                                                    {
+                                                      "typeIdentifier": "t_address",
+                                                      "typeString": "address"
+                                                    }
+                                                  ],
+                                                  "overloadedDeclarations": [
+                                                    null
+                                                  ],
+                                                  "referencedDeclaration": 8997,
+                                                  "type": "type(contract IUniswapV3Factory)",
+                                                  "value": "IUniswapV3Factory"
+                                                },
+                                                "id": 1015,
+                                                "name": "Identifier",
+                                                "src": "841:17:8"
+                                              },
+                                              {
+                                                "attributes": {
+                                                  "overloadedDeclarations": [
+                                                    null
+                                                  ],
+                                                  "referencedDeclaration": 533,
+                                                  "type": "address",
+                                                  "value": "factory"
+                                                },
+                                                "id": 1016,
+                                                "name": "Identifier",
+                                                "src": "859:7:8"
+                                              }
+                                            ],
+                                            "id": 1017,
+                                            "name": "FunctionCall",
+                                            "src": "841:26:8"
+                                          }
+                                        ],
+                                        "id": 1018,
+                                        "name": "MemberAccess",
+                                        "src": "841:37:8"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 979,
+                                          "type": "address",
+                                          "value": "token0"
+                                        },
+                                        "id": 1019,
+                                        "name": "Identifier",
+                                        "src": "879:6:8"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 981,
+                                          "type": "address",
+                                          "value": "token1"
+                                        },
+                                        "id": 1020,
+                                        "name": "Identifier",
+                                        "src": "887:6:8"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 983,
+                                          "type": "uint24",
+                                          "value": "fee"
+                                        },
+                                        "id": 1021,
+                                        "name": "Identifier",
+                                        "src": "895:3:8"
+                                      }
+                                    ],
+                                    "id": 1022,
+                                    "name": "FunctionCall",
+                                    "src": "841:58:8"
+                                  }
+                                ],
+                                "id": 1023,
+                                "name": "Assignment",
+                                "src": "834:65:8"
+                              }
+                            ],
+                            "id": 1024,
+                            "name": "ExpressionStatement",
+                            "src": "834:65:8"
+                          },
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "tuple()",
+                                  "type_conversion": false
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_uint160",
+                                          "typeString": "uint160"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "initialize",
+                                      "referencedDeclaration": 9056,
+                                      "type": "function (uint160) external"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "isStructConstructorCall": false,
+                                          "lValueRequested": false,
+                                          "names": [
+                                            null
+                                          ],
+                                          "tryCall": false,
+                                          "type": "contract IUniswapV3Pool",
+                                          "type_conversion": true
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": [
+                                                {
+                                                  "typeIdentifier": "t_address",
+                                                  "typeString": "address"
+                                                }
+                                              ],
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 9019,
+                                              "type": "type(contract IUniswapV3Pool)",
+                                              "value": "IUniswapV3Pool"
+                                            },
+                                            "id": 1025,
+                                            "name": "Identifier",
+                                            "src": "914:14:8"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 989,
+                                              "type": "address",
+                                              "value": "pool"
+                                            },
+                                            "id": 1026,
+                                            "name": "Identifier",
+                                            "src": "929:4:8"
+                                          }
+                                        ],
+                                        "id": 1027,
+                                        "name": "FunctionCall",
+                                        "src": "914:20:8"
+                                      }
+                                    ],
+                                    "id": 1028,
+                                    "name": "MemberAccess",
+                                    "src": "914:31:8"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 985,
+                                      "type": "uint160",
+                                      "value": "sqrtPriceX96"
+                                    },
+                                    "id": 1029,
+                                    "name": "Identifier",
+                                    "src": "946:12:8"
+                                  }
+                                ],
+                                "id": 1030,
+                                "name": "FunctionCall",
+                                "src": "914:45:8"
+                              }
+                            ],
+                            "id": 1031,
+                            "name": "ExpressionStatement",
+                            "src": "914:45:8"
+                          }
+                        ],
+                        "id": 1032,
+                        "name": "Block",
+                        "src": "819:152:8"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "assignments": [
+                                1034,
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                                null
+                              ]
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "constant": false,
+                                  "mutability": "mutable",
+                                  "name": "sqrtPriceX96Existing",
+                                  "scope": 1053,
+                                  "stateVariable": false,
+                                  "storageLocation": "default",
+                                  "type": "uint160",
+                                  "visibility": "internal"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "name": "uint160",
+                                      "type": "uint160"
+                                    },
+                                    "id": 1033,
+                                    "name": "ElementaryTypeName",
+                                    "src": "993:7:8"
+                                  }
+                                ],
+                                "id": 1034,
+                                "name": "VariableDeclaration",
+                                "src": "993:28:8"
+                              },
+                              {
+                                "attributes": {
+                                  "arguments": [
+                                    null
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "tuple(uint160,int24,uint16,uint16,uint16,uint8,bool)",
+                                  "type_conversion": false
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        null
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "slot0",
+                                      "referencedDeclaration": 9380,
+                                      "type": "function () view external returns (uint160,int24,uint16,uint16,uint16,uint8,bool)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "isStructConstructorCall": false,
+                                          "lValueRequested": false,
+                                          "names": [
+                                            null
+                                          ],
+                                          "tryCall": false,
+                                          "type": "contract IUniswapV3Pool",
+                                          "type_conversion": true
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": [
+                                                {
+                                                  "typeIdentifier": "t_address",
+                                                  "typeString": "address"
+                                                }
+                                              ],
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 9019,
+                                              "type": "type(contract IUniswapV3Pool)",
+                                              "value": "IUniswapV3Pool"
+                                            },
+                                            "id": 1035,
+                                            "name": "Identifier",
+                                            "src": "1037:14:8"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 989,
+                                              "type": "address",
+                                              "value": "pool"
+                                            },
+                                            "id": 1036,
+                                            "name": "Identifier",
+                                            "src": "1052:4:8"
+                                          }
+                                        ],
+                                        "id": 1037,
+                                        "name": "FunctionCall",
+                                        "src": "1037:20:8"
+                                      }
+                                    ],
+                                    "id": 1038,
+                                    "name": "MemberAccess",
+                                    "src": "1037:26:8"
+                                  }
+                                ],
+                                "id": 1039,
+                                "name": "FunctionCall",
+                                "src": "1037:28:8"
+                              }
+                            ],
+                            "id": 1040,
+                            "name": "VariableDeclarationStatement",
+                            "src": "992:73:8"
+                          },
+                          {
+                            "attributes": {},
+                            "children": [
+                              {
+                                "attributes": {
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint160",
+                                    "typeString": "uint160"
+                                  },
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "==",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1034,
+                                      "type": "uint160",
+                                      "value": "sqrtPriceX96Existing"
+                                    },
+                                    "id": 1041,
+                                    "name": "Identifier",
+                                    "src": "1084:20:8"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "30",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "number",
+                                      "type": "int_const 0",
+                                      "value": "0"
+                                    },
+                                    "id": 1042,
+                                    "name": "Literal",
+                                    "src": "1108:1:8"
+                                  }
+                                ],
+                                "id": 1043,
+                                "name": "BinaryOperation",
+                                "src": "1084:25:8"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "isStructConstructorCall": false,
+                                          "lValueRequested": false,
+                                          "names": [
+                                            null
+                                          ],
+                                          "tryCall": false,
+                                          "type": "tuple()",
+                                          "type_conversion": false
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": [
+                                                {
+                                                  "typeIdentifier": "t_uint160",
+                                                  "typeString": "uint160"
+                                                }
+                                              ],
+                                              "isConstant": false,
+                                              "isLValue": false,
+                                              "isPure": false,
+                                              "lValueRequested": false,
+                                              "member_name": "initialize",
+                                              "referencedDeclaration": 9056,
+                                              "type": "function (uint160) external"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "isConstant": false,
+                                                  "isLValue": false,
+                                                  "isPure": false,
+                                                  "isStructConstructorCall": false,
+                                                  "lValueRequested": false,
+                                                  "names": [
+                                                    null
+                                                  ],
+                                                  "tryCall": false,
+                                                  "type": "contract IUniswapV3Pool",
+                                                  "type_conversion": true
+                                                },
+                                                "children": [
+                                                  {
+                                                    "attributes": {
+                                                      "argumentTypes": [
+                                                        {
+                                                          "typeIdentifier": "t_address",
+                                                          "typeString": "address"
+                                                        }
+                                                      ],
+                                                      "overloadedDeclarations": [
+                                                        null
+                                                      ],
+                                                      "referencedDeclaration": 9019,
+                                                      "type": "type(contract IUniswapV3Pool)",
+                                                      "value": "IUniswapV3Pool"
+                                                    },
+                                                    "id": 1044,
+                                                    "name": "Identifier",
+                                                    "src": "1130:14:8"
+                                                  },
+                                                  {
+                                                    "attributes": {
+                                                      "overloadedDeclarations": [
+                                                        null
+                                                      ],
+                                                      "referencedDeclaration": 989,
+                                                      "type": "address",
+                                                      "value": "pool"
+                                                    },
+                                                    "id": 1045,
+                                                    "name": "Identifier",
+                                                    "src": "1145:4:8"
+                                                  }
+                                                ],
+                                                "id": 1046,
+                                                "name": "FunctionCall",
+                                                "src": "1130:20:8"
+                                              }
+                                            ],
+                                            "id": 1047,
+                                            "name": "MemberAccess",
+                                            "src": "1130:31:8"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 985,
+                                              "type": "uint160",
+                                              "value": "sqrtPriceX96"
+                                            },
+                                            "id": 1048,
+                                            "name": "Identifier",
+                                            "src": "1162:12:8"
+                                          }
+                                        ],
+                                        "id": 1049,
+                                        "name": "FunctionCall",
+                                        "src": "1130:45:8"
+                                      }
+                                    ],
+                                    "id": 1050,
+                                    "name": "ExpressionStatement",
+                                    "src": "1130:45:8"
+                                  }
+                                ],
+                                "id": 1051,
+                                "name": "Block",
+                                "src": "1111:80:8"
+                              }
+                            ],
+                            "id": 1052,
+                            "name": "IfStatement",
+                            "src": "1080:111:8"
+                          }
+                        ],
+                        "id": 1053,
+                        "name": "Block",
+                        "src": "977:225:8"
+                      }
+                    ],
+                    "id": 1054,
+                    "name": "IfStatement",
+                    "src": "795:407:8"
+                  }
+                ],
+                "id": 1055,
+                "name": "Block",
+                "src": "674:535:8"
+              }
+            ],
+            "id": 1056,
+            "name": "FunctionDefinition",
+            "src": "472:737:8"
+          }
+        ],
+        "id": 1057,
+        "name": "ContractDefinition",
+        "src": "348:864:8"
+      }
+    ],
+    "id": 1058,
+    "name": "SourceUnit",
+    "src": "46:1168:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-16T08:18:32.597Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "createAndInitializePoolIfNecessary(address,address,uint24,uint160)": {
+        "details": "This method can be bundled with others via IMulticall for the first action (e.g. mint) performed against a pool",
+        "params": {
+          "fee": "The fee amount of the v3 pool for the specified token pair",
+          "sqrtPriceX96": "The initial square root price of the pool as a Q64.96 value",
+          "token0": "The contract address of token0 of the pool",
+          "token1": "The contract address of token1 of the pool"
+        },
+        "returns": {
+          "pool": "Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary"
+        }
+      }
+    },
+    "title": "Creates and initializes V3 Pools",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "createAndInitializePoolIfNecessary(address,address,uint24,uint160)": {
+        "notice": "Creates a new pool if it does not exist, then initializes if not initialized"
+      }
+    },
+    "version": 1
+  }
+}
