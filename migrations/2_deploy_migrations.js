@@ -8,7 +8,7 @@ const NFTDescriptor = artifacts.require("NFTDescriptor.sol");
 module.exports = async function (deployer,network) {
 
     let weth;
-    const FACTORY_ADDRESS = '0x56c85a5CE2E720ea35162D2D69dd378B2852d647';
+    const FACTORY_ADDRESS = '0x0E2ce81B806385c6d9471863c0727D6dC62E57c5';
 
     if(network === 'mainnet'){   
         weth = await WETH.at('0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2')
